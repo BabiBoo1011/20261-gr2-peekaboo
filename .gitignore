@@ -1,0 +1,28 @@
+# Thư viện cài bằng npm
+node_modules/
+
+# Biến môi trường (mật khẩu CSDL, khoá bí mật) – KHÔNG đưa lên Git
+.env
+.env.*
+!.env.example
+
+# Kết quả build
+dist/
+build/
+
+# Log
+*.log
+npm-debug.log*
+
+# Mô hình 3D gốc tải về (nặng); chỉ đưa bản đã chuẩn hoá lên Git
+assets/models/raw/
+
+# Tệp tạm của hệ điều hành và trình soạn thảo
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+.idea/
+
+# Kết quả kiểm thử
+coverage/

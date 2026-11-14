@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Slide 3D minh hoạ</title>
+<style>
+  :root { --bg:#f4f3ef; --card:#ffffff; --text:#1f1f1d; --muted:#6b6a65; --border:#dcdad3; --accent:#185FA5; --accent-bg:#E6F1FB; --ok:#3B6D11; --bad:#A32D2D; --scene:#eeede8; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#1b1b1a; --card:#242423; --text:#f1efe8; --muted:#b4b2a9; --border:#3a3a38; --accent:#85B7EB; --accent-bg:#0C447C; --ok:#97C459; --bad:#F09595; --scene:#2e2e2c; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font-family: system-ui, "Segoe UI", sans-serif; }
+  .wrap { max-width: 980px; margin: 24px auto; padding: 0 16px; }
+  .slide { background:var(--card); border:1px solid var(--border); border-radius:14px; padding:20px 24px; }
+  .meta { font-size:14px; color:var(--muted); }
+  h1 { font-size:30px; font-weight:600; margin:4px 0 2px; }
+  h1 .prep { color:var(--accent); }
+  .vi { font-size:16px; color:var(--muted); }
+  .head { display:flex; justify-content:space-between; align-items:flex-start; gap:12px; flex-wrap:wrap; }
+  canvas { width:100%; height:440px; display:block; margin-top:14px; border-radius:10px; background:var(--scene); cursor:grab; touch-action:none; }
+  canvas:active { cursor:grabbing; }
+  button { font:inherit; font-size:15px; padding:7px 14px; border-radius:8px; border:1px solid var(--border); background:transparent; color:var(--text); cursor:pointer; }
+  button:hover { border-color:var(--muted); }
+  button.on { background:var(--accent-bg); color:var(--accent); border-color:var(--accent); }
+  .row { display:flex; flex-wrap:wrap; gap:8px; margin-top:12px; }
+  .hint { font-size:14px; color:var(--muted); margin-top:10px; min-height:20px; }
+  .hint b { color:var(--text); }
+  .quiz { border-top:1px solid var(--border); margin-top:16px; padding-top:14px; }
+  #qmsg { font-size:15px; margin-left:8px; }
+  #err { display:none; margin-top:12px; padding:10px 14px; border-radius:8px; border:1px solid var(--bad); color:var(--bad); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="slide">
+    <div class="head">
+      <div>
+        <div class="meta">Slide 3 / 8 · Where is the cat?</div>
+        <h1>The cat is <span class="prep" id="prep">on</span> the <span id="obj">table</span>.</h1>
+        <div class="vi" id="vi">Con mèo ở trên cái bàn.</div>
+      </div>
+      <button id="say">🔊 Nghe câu</button>
+    </div>
+
+    <canvas id="cv"></canvas>
+    <div id="err">Không tải được thư viện 3D (Three.js). Kiểm tra kết nối mạng rồi tải lại trang.</div>
+    <div class="hint" id="info">Kéo chuột để xoay · Cuộn để phóng to/thu nhỏ · Bấm vào con mèo, cái bàn hoặc cái hộp để nghe từ</div>
+
+    <div class="row" id="preps"></div>
+
+    <div class="quiz">
+      <button id="quiz">❓ Đố vui: Where is the cat?</button>
+      <span id="qmsg"></span>
+      <div class="row" id="qopts"></div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function () {
+  if (typeof THREE === 'undefined') { document.getElementById('err').style.display = 'block'; return; }
+
+  // Vị trí con mèo cho từng giới từ (gốc toạ độ của mèo nằm ở chân)
+  const PREPS = {
+    'on':          { pos: [0, 1.06, 0],    obj: 'table', vi: 'ở trên' },
+    'under':       { pos: [0, 0, 0],       obj: 'table', vi: 'ở dưới' },
+    'next to':     { pos: [-1.75, 0, 0],   obj: 'table', vi: 'ở bên cạnh' },
+    'behind':      { pos: [0, 0, -1.4],    obj: 'table', vi: 'ở phía sau' },
+    'in front of': { pos: [0, 0, 1.4],     obj: 'table', vi: 'ở phía trước' },
+    'in':          { pos: [2.35, 0.06, 0], obj: 'box',   vi: 'ở trong' }
+  };
+  const OBJ_VI = { table: 'cái bàn', box: 'cái hộp' };
+  const $ = id => document.getElementById(id);
+
+  // ----- Khởi tạo cảnh -----
+  const canvas = $('cv');
+  const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(40, 2, 0.1, 100);
+  const target = new THREE.Vector3(0.4, 0.5, 0);
+
+  scene.add(new THREE.HemisphereLight(0xffffff, 0x888780, 0.95));
+  const sun = new THREE.DirectionalLight(0xffffff, 0.75);
+  sun.position.set(3, 6, 4);
+  scene.add(sun);
+
+  const mat = c => new THREE.MeshLambertMaterial({ color: c });
+
+  const floor = new THREE.Mesh(new THREE.CircleGeometry(4.8, 48), mat(0xD3D1C7));
+  floor.rotation.x = -Math.PI / 2;
+  floor.position.set(0.4, 0, 0);
+  scene.add(floor);
+
+  // Cái bàn
+  const table = new THREE.Group();
+  table.userData = { en: 'table', vi: 'cái bàn' };
+  const top = new THREE.Mesh(new THREE.BoxGeometry(2.2, 0.1, 1.3), mat(0xBA7517));
+  top.position.y = 1.01;
+  table.add(top);
+  [[-1, -0.55], [1, -0.55], [-1, 0.55], [1, 0.55]].forEach(([x, z]) => {
+    const leg = new THREE.Mesh(new THREE.BoxGeometry(0.1, 1, 0.1), mat(0x854F0B));
+    leg.position.set(x, 0.5, z);
+    table.add(leg);
+  });
+  scene.add(table);
+
+  // Cái hộp (không có nắp)
+  const box = new THREE.Group();
+  box.userData = { en: 'box', vi: 'cái hộp' };
+  box.position.set(2.35, 0, 0);
+  const boxMat = mat(0x378ADD);
+  const bottom = new THREE.Mesh(new THREE.BoxGeometry(1, 0.06, 1), boxMat);
+  bottom.position.y = 0.03;
+  box.add(bottom);
+  [[0, 0.5, 1, 0.06], [0, -0.5, 1, 0.06], [0.5, 0, 0.06, 1], [-0.5, 0, 0.06, 1]].forEach(([x, z, w, d]) => {
+    const wall = new THREE.Mesh(new THREE.BoxGeometry(w, 0.55, d), boxMat);
+    wall.position.set(x, 0.3, z);
+    box.add(wall);
+  });
+  scene.add(box);
+
+  // Con mèo (ghép từ hình khối đơn giản)
+  const cat = new THREE.Group();
+  cat.userData = { en: 'cat', vi: 'con mèo' };
+  const catMat = mat(0xD85A30);
+  const body = new THREE.Mesh(new THREE.SphereGeometry(1, 20, 16), catMat);
+  body.scale.set(0.34, 0.2, 0.2);
+  body.position.y = 0.22;
+  cat.add(body);
+  const head = new THREE.Mesh(new THREE.SphereGeometry(0.15, 20, 16), catMat);
+  head.position.set(0.32, 0.42, 0);
+  cat.add(head);
+  [0.07, -0.07].forEach(z => {
+    const ear = new THREE.Mesh(new THREE.ConeGeometry(0.05, 0.12, 12), catMat);
+    ear.position.set(0.32, 0.58, z);
+    cat.add(ear);
+  });
+  const tail = new THREE.Mesh(new THREE.CylinderGeometry(0.025, 0.025, 0.4, 8), catMat);
+  tail.position.set(-0.36, 0.38, 0);
+  tail.rotation.z = -0.5;
+  cat.add(tail);
+  [[0.18, 0.08], [0.18, -0.08], [-0.16, 0.08], [-0.16, -0.08]].forEach(([x, z]) => {
+    const leg = new THREE.Mesh(new THREE.CylinderGeometry(0.035, 0.035, 0.14, 8), catMat);
+    leg.position.set(x, 0.07, z);
+    cat.add(leg);
+  });
+  scene.add(cat);
+
+  // ----- Xoay / phóng to camera bằng chuột -----
+  let theta = 0.65, phi = 1.05, radius = 7.6;
+  function placeCamera() {
+    camera.position.set(
+      target.x + radius * Math.sin(phi) * Math.sin(theta),
+      target.y + radius * Math.cos(phi),
+      target.z + radius * Math.sin(phi) * Math.cos(theta)
+    );
+    camera.lookAt(target);
+  }
+  let drag = null;
+  canvas.addEventListener('pointerdown', e => { drag = { x: e.clientX, y: e.clientY, sx: e.clientX, sy: e.clientY }; canvas.setPointerCapture(e.pointerId); });
+  canvas.addEventListener('pointermove', e => {
+    if (!drag) return;
+    theta -= (e.clientX - drag.x) * 0.008;
+    phi = Math.min(Math.PI / 2 - 0.05, Math.max(0.2, phi - (e.clientY - drag.y) * 0.008));
+    drag.x = e.clientX; drag.y = e.clientY;
+  });
+  canvas.addEventListener('pointerup', e => {
+    const moved = drag && Math.hypot(e.clientX - drag.sx, e.clientY - drag.sy) > 5;
+    drag = null;
+    if (!moved) pick(e);
+  });
+  canvas.addEventListener('wheel', e => { e.preventDefault(); radius = Math.min(14, Math.max(3.5, radius + e.deltaY * 0.005)); }, { passive: false });
+
+  // ----- Bấm vào vật để xem từ và nghe phát âm -----
+  const raycaster = new THREE.Raycaster();
+  const mouse = new THREE.Vector2();
+  function pick(e) {
+    const r = canvas.getBoundingClientRect();
+    mouse.x = (e.clientX - r.left) / r.width * 2 - 1;
+    mouse.y = -(e.clientY - r.top) / r.height * 2 + 1;
+    raycaster.setFromCamera(mouse, camera);
+    const hit = raycaster.intersectObjects([cat, table, box], true)[0];
+    if (!hit) return;
+    let o = hit.object;
+    while (!o.userData.en) o = o.parent;
+    $('info').innerHTML = '<b>' + o.userData.en + '</b> — ' + o.userData.vi;
+    speak(o.userData.en);
+    o.scale.setScalar(1.12);
+    setTimeout(() => o.scale.setScalar(1), 180);
+  }
+
+  function speak(text) {
+    try {
+      const u = new SpeechSynthesisUtterance(text);
+      u.lang = 'en-US'; u.rate = 0.85;
+      speechSynthesis.cancel(); speechSynthesis.speak(u);
+    } catch (e) { /* trình duyệt không hỗ trợ đọc */ }
+  }
+
+  // ----- Đổi giới từ -----
+  let current = 'on';
+  const goal = new THREE.Vector3(...PREPS.on.pos);
+  cat.position.copy(goal);
+  const sentence = p => 'The cat is ' + p + ' the ' + PREPS[p].obj + '.';
+
+  function setPrep(p, reveal = true) {
+    current = p;
+    goal.set(...PREPS[p].pos);
+    if (reveal) {
+      $('prep').textContent = p;
+      $('obj').textContent = PREPS[p].obj;
+      $('vi').textContent = 'Con mèo ' + PREPS[p].vi + ' ' + OBJ_VI[PREPS[p].obj] + '.';
+    }
+    document.querySelectorAll('#preps button').forEach(b => b.classList.toggle('on', reveal && b.dataset.p === p));
+  }
+
+  Object.keys(PREPS).forEach(p => {
+    const b = document.createElement('button');
+    b.textContent = p;
+    b.dataset.p = p;
+    b.onclick = () => { $('qopts').innerHTML = ''; $('qmsg').textContent = ''; setPrep(p); speak(sentence(p)); };
+    $('preps').appendChild(b);
+  });
+  setPrep('on');
+  $('say').onclick = () => speak(sentence(current));
+
+  // ----- Đố vui -----
+  $('quiz').onclick = () => {
+    const keys = Object.keys(PREPS);
+    const answer = keys[Math.floor(Math.random() * keys.length)];
+    setPrep(answer, false);
+    $('qmsg').textContent = 'Con mèo đang ở đâu? Chọn câu đúng.';
+    $('qmsg').style.color = 'var(--muted)';
+    const options = [answer];
+    while (options.length < 4) {
+      const k = keys[Math.floor(Math.random() * keys.length)];
+      if (!options.includes(k)) options.push(k);
+    }
+    options.sort(() => Math.random() - 0.5);
+    $('qopts').innerHTML = '';
+    options.forEach(o => {
+      const b = document.createElement('button');
+      b.textContent = sentence(o);
+      b.onclick = () => {
+        if (o === answer) {
+          $('qmsg').textContent = 'Đúng rồi!';
+          $('qmsg').style.color = 'var(--ok)';
+          setPrep(answer);
+          speak(sentence(answer));
+        } else {
+          $('qmsg').textContent = 'Chưa đúng, xoay cảnh để nhìn kỹ hơn rồi thử lại.';
+          $('qmsg').style.color = 'var(--bad)';
+        }
+      };
+      $('qopts').appendChild(b);
+    });
+  };
+
+  // ----- Vẽ liên tục -----
+  function resize() {
+    const w = canvas.clientWidth, h = canvas.clientHeight;
+    renderer.setSize(w, h, false);
+    camera.aspect = w / h;
+    camera.updateProjectionMatrix();
+  }
+  window.addEventListener('resize', resize);
+  resize();
+
+  (function loop() {
+    requestAnimationFrame(loop);
+    cat.position.lerp(goal, 0.12);
+    placeCamera();
+    renderer.render(scene, camera);
+  })();
+})();
+</script>
+</body>
+</html>
