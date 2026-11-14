@@ -342,11 +342,11 @@ Dùng được cả khi giáo viên trình chiếu (F30) và khi học sinh xem 
 
 | Mã | Công việc | Đầu ra |
 | --- | --- | --- |
-| CV0.1 | Hoàn thiện tài liệu mô tả dự án ✅ | `docs/01-mo-ta-du-an.md` |
-| CV0.2 | Dựng bản thử nghiệm slide 3D bằng hình khối đơn giản ✅ | `prototype/slide-3d-demo.html` |
-| CV0.3 | Tạo kho mã nguồn Git, đưa lên GitHub; quy ước thư mục | Kho mã nguồn |
-| CV0.4 | Cài Ollama; tải và chạy thử 2 mô hình ngôn ngữ cỡ 7–8 tỉ tham số và 1 mô hình embedding đa ngôn ngữ | Ghi chú cài đặt |
-| CV0.5 | Thử sinh dàn ý JSON cho 3 mô tả mẫu; **đo thời gian** sinh và mức dùng bộ nhớ GPU | Bảng so sánh sơ bộ 2 mô hình |
+| CV0.1 | ✅Hoàn thiện tài liệu mô tả dự án | `docs/01-mo-ta-du-an.md` |
+| CV0.2 | ✅Dựng bản thử nghiệm slide 3D bằng hình khối đơn giản | `prototype/slide-3d-demo.html` |
+| CV0.3 | ✅Tạo kho mã nguồn Git, đưa lên GitHub; quy ước thư mục | Kho mã nguồn [20261-gr2-peekaboo](https://github.com/BabiBoo1011/20261-gr2-peekaboo.git) |
+| CV0.4 | ✅Cài Ollama; tải và chạy thử 2 mô hình ngôn ngữ cỡ 7–8 tỉ tham số và 1 mô hình embedding đa ngôn ngữ | Ghi chú cài đặt |
+| CV0.5 | ✅Thử sinh dàn ý JSON cho 3 mô tả mẫu; **đo thời gian** sinh và mức dùng bộ nhớ GPU | [Nhật ký tuần 1](nhat-ky/tuan-01.md) |
 | CV0.6 | Khảo sát các nguồn mô hình 3D có giấy phép CC0; thống kê số mô hình phù hợp với 5 chủ đề | Danh sách nguồn |
 | CV0.7 | Khảo sát nghiên cứu liên quan: các hệ thống sinh cảnh 3D từ văn bản (text-to-scene), dùng LLM sinh bố cục cảnh; công cụ soạn bài giảng có AI | Ghi chú tài liệu tham khảo (dùng cho chương tổng quan của báo cáo) |
 
@@ -384,8 +384,9 @@ Dùng được cả khi giáo viên trình chiếu (F30) và khi học sinh xem 
 
 | Mã | Công việc | Đầu ra |
 | --- | --- | --- |
-| CV3.1 | Viết prompt: vai trò, trình độ học sinh, danh sách giới từ hỗ trợ, ví dụ mẫu, yêu cầu trả về đúng JSON | Tệp prompt |
-| CV3.2 | Gọi Ollama với chế độ ép trả về JSON; kiểm tra định dạng bằng schema (CV2.2); sinh lại tối đa 3 lần (BR03) | Mô-đun sinh dàn ý |
+| CV3.1 | Viết prompt hệ thống bằng tiếng Anh: vai trò, trình độ học sinh, danh sách giới từ hỗ trợ, **danh sách vật có trong thư viện**, ví dụ mẫu | Tệp prompt |
+| CV3.2 | Gọi Ollama với JSON Schema (CV2.2) để ép cấu trúc đầu ra; kiểm tra lại định dạng; sinh lại tối đa 3 lần (BR03) | Mô-đun sinh dàn ý |
+| CV3.2a | Ghép nghĩa tiếng Việt từ tên tiếng Việt của vật trong thư viện theo mẫu câu, không dùng bản dịch của LLM (thử nghiệm tuần 1: LLM dịch sai, ví dụ *ruler* thành "Kéo") | Hàm ghép nghĩa |
 | CV3.3 | Kiểm tra nội dung: giới từ hợp lệ (BR02), số slide, số vật mỗi slide (BR01) | Bộ kiểm tra |
 | CV3.4 | Ghi nhật ký mỗi lần sinh (mô hình, số lần thử, thời gian) để phục vụ RQ3 | Bảng lần sinh trong CSDL |
 | CV3.5 | Soạn bộ dữ liệu RQ3: khoảng 20 mô tả bài giảng mẫu đa dạng (tiếng Việt, tiếng Anh, chủ đề, giới từ); soạn thang chấm mức độ phù hợp trình độ | `data/rq3-prompts.json`, thang chấm |
@@ -396,7 +397,7 @@ Dùng được cả khi giáo viên trình chiếu (F30) và khi học sinh xem 
 | Mã | Công việc | Đầu ra |
 | --- | --- | --- |
 | CV4.1 | Tìm theo từ khoá: so khớp tên, thẻ (có xử lý số nhiều, viết hoa, tiếng Việt không dấu) | Hàm tìm theo từ khoá |
-| CV4.2 | Tạo vector ngữ nghĩa cho toàn bộ thư viện; lưu vào CSDL | Vector của ~100 mô hình |
+| CV4.2 | Tạo vector ngữ nghĩa cho toàn bộ thư viện từ **mô tả đầy đủ** (tên, thẻ tiếng Anh, thẻ tiếng Việt) và từ tên đơn lẻ (để so sánh ở RQ1); lưu vào CSDL | Vector của ~100 mô hình |
 | CV4.3 | Tìm theo ngữ nghĩa bằng độ tương đồng cosin | Hàm tìm theo ngữ nghĩa |
 | CV4.4 | Kết hợp hai cách (cộng điểm có trọng số) | Hàm tìm kết hợp |
 | CV4.5 | **Chọn trọng số và ngưỡng** trên phần chỉnh tham số của bộ RQ1 (BR09) | Tham số đã chọn |
