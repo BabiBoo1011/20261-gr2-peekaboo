@@ -1,6 +1,6 @@
 # Nhật ký tuần 1
 
-Ngày: 14/11/2026 · Liên quan: CV0.4, CV0.5
+Ngày: 14–15/11/2026 · Liên quan: CV0.4, CV0.5, CV0.6
 
 Môi trường: laptop GPU RTX 4050 6 GB, RAM 16 GB · Ollama 0.40.16 · mô hình `qwen2.5:7b`, `llama3.1:8b`, `bge-m3`.
 
@@ -48,6 +48,18 @@ Vector của từ đơn lẻ chưa tin cậy: *cat* gần *table* hơn *con mèo
 - **Đưa danh sách vật trong thư viện vào prompt** để mô hình chỉ chọn vật dựng được 3D.
 - **Tìm mô hình 3D kết hợp từ khoá và ngữ nghĩa**; thử tạo vector từ mô tả đầy đủ thay vì một từ; chọn ngưỡng bằng thực nghiệm RQ1.
 
-## 5. Mốc M1
+## 5. Khảo sát nguồn mô hình 3D (15/11)
 
-Ollama chạy được ✅ · Sinh dàn ý JSON đúng định dạng ✅ · Biết thời gian sinh (8–14 giây cho 3 slide) ✅ · Danh sách nguồn mô hình 3D ⬜ (CV0.6)
+Chi tiết: [05-khao-sat-nguon-mo-hinh-3d.md](../05-khao-sat-nguon-mo-hinh-3d.md).
+
+- Khảo sát với 40 từ (8 từ mỗi chủ đề); *kite* không tìm được nên thay bằng *skateboard*.
+- **Kenney** (4 gói: Furniture Kit, Cube Pets, Food Kit, Toy Car Kit, đều CC0) phủ 31/40 từ; thiếu hầu hết đồ chơi.
+- **Poly Pizza** bổ sung 9 mô hình lẻ (6 CC-BY, 3 CC0), mỗi mô hình lưu kèm `license.txt`; dòng ghi công CC-BY được lưu trong tệp khảo sát.
+- Tổng cộng phủ **40/40 từ**.
+- Vấn đề phát hiện khi đo mô hình: tỉ lệ lệch nhau giữa các nguồn (con mèo cao gấp 5 lần cái bàn), gốc toạ độ không ở giữa đáy, một số mô hình nằm ngang, texture để ngoài tệp `.glb`. Đây là căn cứ cho bước chuẩn hoá (CV1.3).
+
+## 6. Mốc M1
+
+Ollama chạy được ✅ · Sinh dàn ý JSON đúng định dạng ✅ · Biết thời gian sinh (8–14 giây cho 3 slide) ✅ · Danh sách nguồn mô hình 3D ✅ (CV0.6)
+
+Còn lại của giai đoạn 0: CV0.7 – khảo sát nghiên cứu liên quan.
