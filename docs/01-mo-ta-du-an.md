@@ -347,7 +347,7 @@ Dùng được cả khi giáo viên trình chiếu (F30) và khi học sinh xem 
 | CV0.3 | ✅Tạo kho mã nguồn Git, đưa lên GitHub; quy ước thư mục | Kho mã nguồn [20261-gr2-peekaboo](https://github.com/BabiBoo1011/20261-gr2-peekaboo.git) |
 | CV0.4 | ✅Cài Ollama; tải và chạy thử 2 mô hình ngôn ngữ cỡ 7–8 tỉ tham số và 1 mô hình embedding đa ngôn ngữ | Ghi chú cài đặt |
 | CV0.5 | ✅Thử sinh dàn ý JSON cho 3 mô tả mẫu; **đo thời gian** sinh và mức dùng bộ nhớ GPU | [Nhật ký tuần 1](nhat-ky/tuan-01.md) |
-| CV0.6 | Khảo sát các nguồn mô hình 3D có giấy phép CC0; thống kê số mô hình phù hợp với 5 chủ đề | Danh sách nguồn |
+| CV0.6 | ✅Khảo sát các nguồn mô hình 3D có giấy phép CC0; thống kê số mô hình phù hợp với 5 chủ đề | Danh sách nguồn |
 | CV0.7 | Khảo sát nghiên cứu liên quan: các hệ thống sinh cảnh 3D từ văn bản (text-to-scene), dùng LLM sinh bố cục cảnh; công cụ soạn bài giảng có AI | Ghi chú tài liệu tham khảo (dùng cho chương tổng quan của báo cáo) |
 
 **Mốc M1:** chạy được Ollama trên máy, sinh được 1 dàn ý JSON đúng định dạng; biết thời gian sinh thực tế; có danh sách nguồn mô hình 3D.
