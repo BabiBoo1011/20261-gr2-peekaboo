@@ -1,0 +1,1003 @@
+[
+  {
+    "id": "desk",
+    "source": "kenney_furniture-kit/Models/GLTF format/desk.glb",
+    "size": 0.75,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "chair",
+    "source": "kenney_furniture-kit/Models/GLTF format/chair.glb",
+    "size": 0.9,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "table",
+    "source": "kenney_furniture-kit/Models/GLTF format/table.glb",
+    "size": 0.75,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "book",
+    "source": "kenney_furniture-kit/Models/GLTF format/books.glb",
+    "size": 0.15,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "bookcase",
+    "source": "kenney_furniture-kit/Models/GLTF format/bookcaseOpen.glb",
+    "size": 1.8,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "computer",
+    "source": "kenney_furniture-kit/Models/GLTF format/computerScreen.glb",
+    "size": 0.45,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "laptop",
+    "source": "kenney_furniture-kit/Models/GLTF format/laptop.glb",
+    "size": 0.25,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "keyboard",
+    "source": "kenney_furniture-kit/Models/GLTF format/computerKeyboard.glb",
+    "size": 0.45,
+    "sizeAxis": "longest",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "bin",
+    "source": "kenney_furniture-kit/Models/GLTF format/trashcan.glb",
+    "size": 0.6,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "pencil",
+    "source": "polypizza_pencil/pencil.glb",
+    "size": 0.18,
+    "sizeAxis": "longest",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "school-bag",
+    "source": "polypizza_school-bag/school-bag.glb",
+    "size": 0.4,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "bench",
+    "source": "kenney_furniture-kit/Models/GLTF format/bench.glb",
+    "size": 0.9,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "stool",
+    "source": "kenney_furniture-kit/Models/GLTF format/stoolBar.glb",
+    "size": 0.75,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "speaker",
+    "source": "kenney_furniture-kit/Models/GLTF format/speaker.glb",
+    "size": 0.3,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "coat-rack",
+    "source": "kenney_furniture-kit/Models/GLTF format/coatRackStanding.glb",
+    "size": 1.75,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "plant",
+    "source": "kenney_furniture-kit/Models/GLTF format/pottedPlant.glb",
+    "size": 0.8,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "bed",
+    "source": "kenney_furniture-kit/Models/GLTF format/bedSingle.glb",
+    "size": 2,
+    "sizeAxis": "longest",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "double-bed",
+    "source": "kenney_furniture-kit/Models/GLTF format/bedDouble.glb",
+    "size": 2,
+    "sizeAxis": "longest",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "bunk-bed",
+    "source": "kenney_furniture-kit/Models/GLTF format/bedBunk.glb",
+    "size": 1.7,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "sofa",
+    "source": "kenney_furniture-kit/Models/GLTF format/loungeSofa.glb",
+    "size": 2,
+    "sizeAxis": "longest",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "armchair",
+    "source": "kenney_furniture-kit/Models/GLTF format/loungeChair.glb",
+    "size": 0.85,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "coffee-table",
+    "source": "kenney_furniture-kit/Models/GLTF format/tableCoffee.glb",
+    "size": 0.45,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "side-table",
+    "source": "kenney_furniture-kit/Models/GLTF format/sideTable.glb",
+    "size": 0.55,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "lamp",
+    "source": "kenney_furniture-kit/Models/GLTF format/lampRoundTable.glb",
+    "size": 0.45,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "floor-lamp",
+    "source": "kenney_furniture-kit/Models/GLTF format/lampSquareFloor.glb",
+    "size": 1.6,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "television",
+    "source": "kenney_furniture-kit/Models/GLTF format/televisionModern.glb",
+    "size": 0.7,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "fridge",
+    "source": "kenney_furniture-kit/Models/GLTF format/kitchenFridge.glb",
+    "size": 1.8,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "cooker",
+    "source": "kenney_furniture-kit/Models/GLTF format/kitchenStove.glb",
+    "size": 0.9,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "sink",
+    "source": "kenney_furniture-kit/Models/GLTF format/kitchenSink.glb",
+    "size": 0.9,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "microwave",
+    "source": "kenney_furniture-kit/Models/GLTF format/kitchenMicrowave.glb",
+    "size": 0.3,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "cupboard",
+    "source": "kenney_furniture-kit/Models/GLTF format/kitchenCabinet.glb",
+    "size": 0.9,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "bath",
+    "source": "kenney_furniture-kit/Models/GLTF format/bathtub.glb",
+    "size": 1.7,
+    "sizeAxis": "longest",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "toilet",
+    "source": "kenney_furniture-kit/Models/GLTF format/toilet.glb",
+    "size": 0.75,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "mirror",
+    "source": "kenney_furniture-kit/Models/GLTF format/bathroomMirror.glb",
+    "size": 0.6,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "washing-machine",
+    "source": "kenney_furniture-kit/Models/GLTF format/washer.glb",
+    "size": 0.85,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "pillow",
+    "source": "kenney_furniture-kit/Models/GLTF format/pillow.glb",
+    "size": 0.6,
+    "sizeAxis": "longest",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "rug",
+    "source": "kenney_furniture-kit/Models/GLTF format/rugRound.glb",
+    "size": 2,
+    "sizeAxis": "longest",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "box",
+    "source": "kenney_furniture-kit/Models/GLTF format/cardboardBoxOpen.glb",
+    "size": 0.35,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "cat",
+    "source": "kenney_cube-pets_1.0/Models/GLB format/animal-cat.glb",
+    "size": 0.3,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "dog",
+    "source": "kenney_cube-pets_1.0/Models/GLB format/animal-dog.glb",
+    "size": 0.5,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "fish",
+    "source": "kenney_cube-pets_1.0/Models/GLB format/animal-fish.glb",
+    "size": 0.25,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "bird",
+    "source": "kenney_cube-pets_1.0/Models/GLB format/animal-parrot.glb",
+    "size": 0.3,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "chick",
+    "source": "kenney_cube-pets_1.0/Models/GLB format/animal-chick.glb",
+    "size": 0.15,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "rabbit",
+    "source": "kenney_cube-pets_1.0/Models/GLB format/animal-bunny.glb",
+    "size": 0.35,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "monkey",
+    "source": "kenney_cube-pets_1.0/Models/GLB format/animal-monkey.glb",
+    "size": 0.6,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "elephant",
+    "source": "kenney_cube-pets_1.0/Models/GLB format/animal-elephant.glb",
+    "size": 3,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "tiger",
+    "source": "kenney_cube-pets_1.0/Models/GLB format/animal-tiger.glb",
+    "size": 1,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "lion",
+    "source": "kenney_cube-pets_1.0/Models/GLB format/animal-lion.glb",
+    "size": 1.1,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "giraffe",
+    "source": "kenney_cube-pets_1.0/Models/GLB format/animal-giraffe.glb",
+    "size": 4.5,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "cow",
+    "source": "kenney_cube-pets_1.0/Models/GLB format/animal-cow.glb",
+    "size": 1.5,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "pig",
+    "source": "kenney_cube-pets_1.0/Models/GLB format/animal-pig.glb",
+    "size": 0.8,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "panda",
+    "source": "kenney_cube-pets_1.0/Models/GLB format/animal-panda.glb",
+    "size": 1.2,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "penguin",
+    "source": "kenney_cube-pets_1.0/Models/GLB format/animal-penguin.glb",
+    "size": 0.7,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "bee",
+    "source": "kenney_cube-pets_1.0/Models/GLB format/animal-bee.glb",
+    "size": 0.08,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "crab",
+    "source": "kenney_cube-pets_1.0/Models/GLB format/animal-crab.glb",
+    "size": 0.15,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "fox",
+    "source": "kenney_cube-pets_1.0/Models/GLB format/animal-fox.glb",
+    "size": 0.5,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "deer",
+    "source": "kenney_cube-pets_1.0/Models/GLB format/animal-deer.glb",
+    "size": 1.2,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "polar-bear",
+    "source": "kenney_cube-pets_1.0/Models/GLB format/animal-polar.glb",
+    "size": 1.4,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "apple",
+    "source": "kenney_food-kit/Models/GLB format/apple.glb",
+    "size": 0.08,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "banana",
+    "source": "kenney_food-kit/Models/GLB format/banana.glb",
+    "size": 0.2,
+    "sizeAxis": "longest",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "orange",
+    "source": "kenney_food-kit/Models/GLB format/orange.glb",
+    "size": 0.08,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "pear",
+    "source": "kenney_food-kit/Models/GLB format/pear.glb",
+    "size": 0.1,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "lemon",
+    "source": "kenney_food-kit/Models/GLB format/lemon.glb",
+    "size": 0.07,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "strawberry",
+    "source": "kenney_food-kit/Models/GLB format/strawberry.glb",
+    "size": 0.04,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "grapes",
+    "source": "kenney_food-kit/Models/GLB format/grapes.glb",
+    "size": 0.15,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "watermelon",
+    "source": "kenney_food-kit/Models/GLB format/watermelon.glb",
+    "size": 0.3,
+    "sizeAxis": "longest",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "tomato",
+    "source": "kenney_food-kit/Models/GLB format/tomato.glb",
+    "size": 0.07,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "carrot",
+    "source": "kenney_food-kit/Models/GLB format/carrot.glb",
+    "size": 0.2,
+    "sizeAxis": "longest",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "egg",
+    "source": "kenney_food-kit/Models/GLB format/egg.glb",
+    "size": 0.06,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "bread",
+    "source": "kenney_food-kit/Models/GLB format/bread.glb",
+    "size": 0.12,
+    "sizeAxis": "longest",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "cake",
+    "source": "kenney_food-kit/Models/GLB format/cake.glb",
+    "size": 0.25,
+    "sizeAxis": "longest",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "cookie",
+    "source": "kenney_food-kit/Models/GLB format/cookie.glb",
+    "size": 0.07,
+    "sizeAxis": "longest",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "donut",
+    "source": "kenney_food-kit/Models/GLB format/donut.glb",
+    "size": 0.1,
+    "sizeAxis": "longest",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "ice-cream",
+    "source": "kenney_food-kit/Models/GLB format/ice-cream.glb",
+    "size": 0.18,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "pizza",
+    "source": "kenney_food-kit/Models/GLB format/pizza.glb",
+    "size": 0.35,
+    "sizeAxis": "longest",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "burger",
+    "source": "kenney_food-kit/Models/GLB format/burger.glb",
+    "size": 0.12,
+    "sizeAxis": "longest",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "sandwich",
+    "source": "kenney_food-kit/Models/GLB format/sandwich.glb",
+    "size": 0.15,
+    "sizeAxis": "longest",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "cheese",
+    "source": "kenney_food-kit/Models/GLB format/cheese.glb",
+    "size": 0.1,
+    "sizeAxis": "longest",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "milk",
+    "source": "kenney_food-kit/Models/GLB format/carton.glb",
+    "size": 0.2,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "plate",
+    "source": "kenney_food-kit/Models/GLB format/plate.glb",
+    "size": 0.25,
+    "sizeAxis": "longest",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "bowl",
+    "source": "kenney_food-kit/Models/GLB format/bowl.glb",
+    "size": 0.16,
+    "sizeAxis": "longest",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "cup",
+    "source": "kenney_food-kit/Models/GLB format/cup.glb",
+    "size": 0.1,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "ball",
+    "source": "polypizza_ball/ball.glb",
+    "size": 0.22,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "teddy-bear",
+    "source": "polypizza_teddy-bear/teddy-bear.glb",
+    "size": 0.35,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "doll",
+    "source": "polypizza_doll/doll.glb",
+    "size": 0.3,
+    "sizeAxis": "height",
+    "rotate": [
+      90,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "robot",
+    "source": "polypizza_robot/robot.glb",
+    "size": 0.35,
+    "sizeAxis": "height",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "ship",
+    "source": "polypizza_ship/ship.glb",
+    "size": 0.4,
+    "sizeAxis": "longest",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "plane",
+    "source": "polypizza_airplane/airplane.glb",
+    "size": 0.4,
+    "sizeAxis": "longest",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "skateboard",
+    "source": "polypizza_skateboard/skateboard.glb",
+    "size": 0.8,
+    "sizeAxis": "longest",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "car",
+    "source": "kenney_toy-car-kit/Models/GLB format/vehicle-racer.glb",
+    "size": 0.25,
+    "sizeAxis": "longest",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "truck",
+    "source": "kenney_toy-car-kit/Models/GLB format/vehicle-truck.glb",
+    "size": 0.3,
+    "sizeAxis": "longest",
+    "rotate": [
+      0,
+      0,
+      0
+    ]
+  }
+]
