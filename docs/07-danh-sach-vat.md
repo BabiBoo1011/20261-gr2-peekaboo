@@ -23,7 +23,7 @@ Liên quan: CV1.1 (giai đoạn 1). Nguồn mô hình: [05-khao-sat-nguon-mo-hin
 | 6 | computer | computer | cái máy tính | kn-furniture-kit / computerScreen | nhỏ | |
 | 7 | laptop | laptop | cái máy tính xách tay | kn-furniture-kit / laptop | nhỏ | |
 | 8 | keyboard | keyboard | cái bàn phím | kn-furniture-kit / computerKeyboard | nhỏ | |
-| 9 | bin | bin | cái thùng rác | kn-furniture-kit / trashcan | chứa | |
+| 9 | bin | bin | cái thùng rác | kn-furniture-kit / trashcan | | Có nắp đóng, không chứa được |
 | 10 | pencil | pencil | cái bút chì | pp-pencil / pencil | nhỏ | Nằm ngang; CC-BY |
 | 11 | school-bag | school bag | cái cặp sách | pp-school-bag / school-bag | chứa | Cặp mở; CC-BY |
 | 12 | bench | bench | cái ghế dài | kn-furniture-kit / bench | đỡ, gầm | |
@@ -45,8 +45,8 @@ Liên quan: CV1.1 (giai đoạn 1). Nguồn mô hình: [05-khao-sat-nguon-mo-hin
 | 7 | side-table | side table | cái tủ đầu giường | kn-furniture-kit / sideTable | đỡ | |
 | 8 | lamp | lamp | cái đèn bàn | kn-furniture-kit / lampRoundTable | nhỏ | |
 | 9 | floor-lamp | floor lamp | cái đèn đứng | kn-furniture-kit / lampSquareFloor | | Ca thử RQ1: đèn bàn – đèn đứng |
-| 10 | television | television | cái ti vi | kn-furniture-kit / televisionModern | đỡ | |
-| 11 | fridge | fridge | cái tủ lạnh | kn-furniture-kit / kitchenFridge | chứa, đỡ | Mô hình đóng cửa |
+| 10 | television | television | cái ti vi | kn-furniture-kit / televisionModern | | Màn hình mỏng, không đặt đồ lên được |
+| 11 | fridge | fridge | cái tủ lạnh | kn-furniture-kit / kitchenFridge | đỡ | Mô hình đóng cửa, chỉ đặt đồ lên nóc |
 | 12 | cooker | cooker | cái bếp | kn-furniture-kit / kitchenStove | đỡ | |
 | 13 | sink | sink | cái bồn rửa | kn-furniture-kit / kitchenSink | chứa | |
 | 14 | microwave | microwave | cái lò vi sóng | kn-furniture-kit / kitchenMicrowave | đỡ | |
@@ -135,8 +135,8 @@ Toàn bộ lấy từ Food Kit (texture để ngoài tệp, cần nhúng khi chu
 
 | Chủ đề | Số vật | Vật đỡ | Vật chứa | Vật có gầm |
 | --- | --- | --- | --- | --- |
-| Lớp học | 16 | 6 | 2 | 5 |
-| Ngôi nhà | 22 | 15 | 4 | 4 |
+| Lớp học | 16 | 6 | 1 | 5 |
+| Ngôi nhà | 22 | 14 | 3 | 4 |
 | Con vật | 20 | 0 | 0 | 0 |
 | Đồ ăn | 24 | 1 | 2 | 0 |
 | Đồ chơi | 9 | 1 | 0 | 0 |
