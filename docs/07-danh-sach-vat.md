@@ -42,7 +42,7 @@ Liên quan: CV1.1 (giai đoạn 1). Nguồn mô hình: [05-khao-sat-nguon-mo-hin
 | 4 | sofa | sofa | cái ghế sô-pha | kn-furniture-kit / loungeSofa | đỡ | |
 | 5 | armchair | armchair | cái ghế bành | kn-furniture-kit / loungeChair | đỡ | |
 | 6 | coffee-table | coffee table | cái bàn uống nước | kn-furniture-kit / tableCoffee | đỡ, gầm | |
-| 7 | side-table | side table | cái tủ đầu giường | kn-furniture-kit / sideTable | đỡ | |
+| 7 | side-table | side table | cái bàn nhỏ | kn-furniture-kit / sideTable | đỡ, gầm | Bàn nhỏ có chân, không có ngăn kéo |
 | 8 | lamp | lamp | cái đèn bàn | kn-furniture-kit / lampRoundTable | nhỏ | |
 | 9 | floor-lamp | floor lamp | cái đèn đứng | kn-furniture-kit / lampSquareFloor | | Ca thử RQ1: đèn bàn – đèn đứng |
 | 10 | television | television | cái ti vi | kn-furniture-kit / televisionModern | | Màn hình mỏng, không đặt đồ lên được |
@@ -111,7 +111,7 @@ Toàn bộ lấy từ Food Kit (texture để ngoài tệp, cần nhúng khi chu
 | 17 | pizza | pizza | cái bánh pizza | kn-food-kit / pizza | nhỏ | |
 | 18 | burger | burger | cái bánh hamburger | kn-food-kit / burger | nhỏ | |
 | 19 | sandwich | sandwich | cái bánh sandwich | kn-food-kit / sandwich | nhỏ | |
-| 20 | cheese | cheese | miếng phô mai | kn-food-kit / cheese | nhỏ | |
+| 20 | cheese | cheese | bánh phô mai | kn-food-kit / cheese | nhỏ | Cả bánh phô mai tròn |
 | 21 | milk | milk | hộp sữa | kn-food-kit / carton | nhỏ | Mô hình là hộp giấy |
 | 22 | plate | plate | cái đĩa | kn-food-kit / plate | đỡ | |
 | 23 | bowl | bowl | cái bát | kn-food-kit / bowl | chứa | |
@@ -136,7 +136,7 @@ Toàn bộ lấy từ Food Kit (texture để ngoài tệp, cần nhúng khi chu
 | Chủ đề | Số vật | Vật đỡ | Vật chứa | Vật có gầm |
 | --- | --- | --- | --- | --- |
 | Lớp học | 16 | 6 | 1 | 5 |
-| Ngôi nhà | 22 | 14 | 3 | 4 |
+| Ngôi nhà | 22 | 14 | 3 | 5 |
 | Con vật | 20 | 0 | 0 | 0 |
 | Đồ ăn | 24 | 1 | 2 | 0 |
 | Đồ chơi | 9 | 1 | 0 | 0 |

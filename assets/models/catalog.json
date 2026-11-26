@@ -1,7 +1,26 @@
 [
   {
     "id": "desk",
+    "nameEn": "desk",
+    "nameVi": "cái bàn học",
+    "topic": "classroom",
+    "tagsEn": [
+      "school desk",
+      "study table",
+      "writing desk",
+      "furniture"
+    ],
+    "tagsVi": [
+      "bàn học",
+      "bàn làm việc",
+      "đồ nội thất"
+    ],
     "source": "kenney_furniture-kit/Models/GLTF format/desk.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.75,
     "sizeAxis": "height",
     "rotate": [
@@ -31,7 +50,26 @@
   },
   {
     "id": "chair",
+    "nameEn": "chair",
+    "nameVi": "cái ghế",
+    "topic": "classroom",
+    "tagsEn": [
+      "seat",
+      "dining chair",
+      "furniture"
+    ],
+    "tagsVi": [
+      "ghế",
+      "ghế tựa",
+      "chỗ ngồi",
+      "đồ nội thất"
+    ],
     "source": "kenney_furniture-kit/Models/GLTF format/chair.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.9,
     "sizeAxis": "height",
     "rotate": [
@@ -61,7 +99,26 @@
   },
   {
     "id": "table",
+    "nameEn": "table",
+    "nameVi": "cái bàn",
+    "topic": "classroom",
+    "tagsEn": [
+      "dining table",
+      "wooden table",
+      "furniture"
+    ],
+    "tagsVi": [
+      "bàn",
+      "bàn ăn",
+      "bàn gỗ",
+      "đồ nội thất"
+    ],
     "source": "kenney_furniture-kit/Models/GLTF format/table.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.75,
     "sizeAxis": "height",
     "rotate": [
@@ -91,7 +148,26 @@
   },
   {
     "id": "book",
+    "nameEn": "book",
+    "nameVi": "quyển sách",
+    "topic": "classroom",
+    "tagsEn": [
+      "books",
+      "textbook",
+      "reading",
+      "school supplies"
+    ],
+    "tagsVi": [
+      "sách",
+      "sách vở",
+      "đồ dùng học tập"
+    ],
     "source": "kenney_furniture-kit/Models/GLTF format/books.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.15,
     "sizeAxis": "height",
     "rotate": [
@@ -107,7 +183,27 @@
   },
   {
     "id": "bookcase",
+    "nameEn": "bookcase",
+    "nameVi": "cái giá sách",
+    "topic": "classroom",
+    "tagsEn": [
+      "bookshelf",
+      "shelf",
+      "shelves",
+      "furniture"
+    ],
+    "tagsVi": [
+      "giá sách",
+      "kệ sách",
+      "tủ sách",
+      "đồ nội thất"
+    ],
     "source": "kenney_furniture-kit/Models/GLTF format/bookcaseOpen.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 1.8,
     "sizeAxis": "height",
     "rotate": [
@@ -130,7 +226,27 @@
   },
   {
     "id": "computer",
+    "nameEn": "computer",
+    "nameVi": "cái máy tính",
+    "topic": "classroom",
+    "tagsEn": [
+      "desktop computer",
+      "PC",
+      "monitor",
+      "screen"
+    ],
+    "tagsVi": [
+      "máy tính",
+      "máy vi tính",
+      "màn hình",
+      "đồ điện tử"
+    ],
     "source": "kenney_furniture-kit/Models/GLTF format/computerScreen.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.45,
     "sizeAxis": "height",
     "rotate": [
@@ -146,7 +262,25 @@
   },
   {
     "id": "laptop",
+    "nameEn": "laptop",
+    "nameVi": "cái máy tính xách tay",
+    "topic": "classroom",
+    "tagsEn": [
+      "notebook computer",
+      "portable computer",
+      "electronics"
+    ],
+    "tagsVi": [
+      "máy tính xách tay",
+      "laptop",
+      "đồ điện tử"
+    ],
     "source": "kenney_furniture-kit/Models/GLTF format/laptop.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.25,
     "sizeAxis": "height",
     "rotate": [
@@ -162,7 +296,26 @@
   },
   {
     "id": "keyboard",
+    "nameEn": "keyboard",
+    "nameVi": "cái bàn phím",
+    "topic": "classroom",
+    "tagsEn": [
+      "computer keyboard",
+      "keys",
+      "typing",
+      "electronics"
+    ],
+    "tagsVi": [
+      "bàn phím",
+      "bàn phím máy tính",
+      "đồ điện tử"
+    ],
     "source": "kenney_furniture-kit/Models/GLTF format/computerKeyboard.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.45,
     "sizeAxis": "longest",
     "rotate": [
@@ -178,7 +331,26 @@
   },
   {
     "id": "bin",
+    "nameEn": "bin",
+    "nameVi": "cái thùng rác",
+    "topic": "classroom",
+    "tagsEn": [
+      "trash can",
+      "rubbish bin",
+      "garbage can",
+      "waste basket"
+    ],
+    "tagsVi": [
+      "thùng rác",
+      "sọt rác",
+      "đựng rác"
+    ],
     "source": "kenney_furniture-kit/Models/GLTF format/trashcan.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.6,
     "sizeAxis": "height",
     "rotate": [
@@ -194,7 +366,27 @@
   },
   {
     "id": "pencil",
+    "nameEn": "pencil",
+    "nameVi": "cái bút chì",
+    "topic": "classroom",
+    "tagsEn": [
+      "writing tool",
+      "stationery",
+      "school supplies"
+    ],
+    "tagsVi": [
+      "bút chì",
+      "bút",
+      "dụng cụ viết",
+      "đồ dùng học tập"
+    ],
     "source": "polypizza_pencil/pencil.glb",
+    "credit": {
+      "author": "Poly by Google",
+      "license": "CC-BY 3.0",
+      "url": "https://poly.pizza/m/3Sd2klX0_s4",
+      "attribution": "Pencil by Poly by Google [CC-BY] (https://creativecommons.org/licenses/by/3.0/) via Poly Pizza (https://poly.pizza/m/3Sd2klX0_s4)"
+    },
     "size": 0.18,
     "sizeAxis": "longest",
     "rotate": [
@@ -210,7 +402,29 @@
   },
   {
     "id": "school-bag",
+    "nameEn": "school bag",
+    "nameVi": "cái cặp sách",
+    "topic": "classroom",
+    "tagsEn": [
+      "backpack",
+      "schoolbag",
+      "rucksack",
+      "school supplies"
+    ],
+    "tagsVi": [
+      "cặp sách",
+      "cặp",
+      "ba lô",
+      "balo",
+      "đồ dùng học tập"
+    ],
     "source": "polypizza_school-bag/school-bag.glb",
+    "credit": {
+      "author": "Emmett “TawpShelf” Baber",
+      "license": "CC-BY 3.0",
+      "url": "https://poly.pizza/m/26m92LMKK4e",
+      "attribution": "Open Backpack by Emmett “TawpShelf” Baber [CC-BY] (https://creativecommons.org/licenses/by/3.0/) via Poly Pizza (https://poly.pizza/m/26m92LMKK4e)"
+    },
     "size": 0.4,
     "sizeAxis": "height",
     "rotate": [
@@ -238,7 +452,26 @@
   },
   {
     "id": "bench",
+    "nameEn": "bench",
+    "nameVi": "cái ghế dài",
+    "topic": "classroom",
+    "tagsEn": [
+      "long seat",
+      "wooden bench",
+      "furniture"
+    ],
+    "tagsVi": [
+      "ghế dài",
+      "ghế băng",
+      "băng ghế",
+      "đồ nội thất"
+    ],
     "source": "kenney_furniture-kit/Models/GLTF format/bench.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.9,
     "sizeAxis": "height",
     "rotate": [
@@ -268,7 +501,26 @@
   },
   {
     "id": "stool",
+    "nameEn": "stool",
+    "nameVi": "cái ghế đẩu",
+    "topic": "classroom",
+    "tagsEn": [
+      "bar stool",
+      "backless seat",
+      "furniture"
+    ],
+    "tagsVi": [
+      "ghế đẩu",
+      "ghế quầy bar",
+      "ghế không tựa",
+      "đồ nội thất"
+    ],
     "source": "kenney_furniture-kit/Models/GLTF format/stoolBar.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.75,
     "sizeAxis": "height",
     "rotate": [
@@ -298,7 +550,27 @@
   },
   {
     "id": "speaker",
+    "nameEn": "speaker",
+    "nameVi": "cái loa",
+    "topic": "classroom",
+    "tagsEn": [
+      "loudspeaker",
+      "sound",
+      "music",
+      "electronics"
+    ],
+    "tagsVi": [
+      "loa",
+      "âm thanh",
+      "nghe nhạc",
+      "đồ điện tử"
+    ],
     "source": "kenney_furniture-kit/Models/GLTF format/speaker.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.3,
     "sizeAxis": "height",
     "rotate": [
@@ -314,7 +586,27 @@
   },
   {
     "id": "coat-rack",
+    "nameEn": "coat rack",
+    "nameVi": "cái giá treo áo",
+    "topic": "classroom",
+    "tagsEn": [
+      "coat stand",
+      "hat stand",
+      "coat hanger",
+      "furniture"
+    ],
+    "tagsVi": [
+      "giá treo áo",
+      "cây treo quần áo",
+      "mắc áo",
+      "đồ nội thất"
+    ],
     "source": "kenney_furniture-kit/Models/GLTF format/coatRackStanding.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 1.75,
     "sizeAxis": "height",
     "rotate": [
@@ -330,7 +622,26 @@
   },
   {
     "id": "plant",
+    "nameEn": "plant",
+    "nameVi": "cái chậu cây",
+    "topic": "classroom",
+    "tagsEn": [
+      "potted plant",
+      "houseplant",
+      "flower pot",
+      "leaves"
+    ],
+    "tagsVi": [
+      "chậu cây",
+      "cây cảnh",
+      "cây trồng trong chậu"
+    ],
     "source": "kenney_furniture-kit/Models/GLTF format/pottedPlant.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.8,
     "sizeAxis": "height",
     "rotate": [
@@ -346,7 +657,27 @@
   },
   {
     "id": "bed",
+    "nameEn": "bed",
+    "nameVi": "cái giường",
+    "topic": "house",
+    "tagsEn": [
+      "single bed",
+      "bedroom",
+      "sleep",
+      "furniture"
+    ],
+    "tagsVi": [
+      "giường",
+      "giường đơn",
+      "phòng ngủ",
+      "đồ nội thất"
+    ],
     "source": "kenney_furniture-kit/Models/GLTF format/bedSingle.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 2,
     "sizeAxis": "longest",
     "rotate": [
@@ -376,7 +707,27 @@
   },
   {
     "id": "double-bed",
+    "nameEn": "double bed",
+    "nameVi": "cái giường đôi",
+    "topic": "house",
+    "tagsEn": [
+      "large bed",
+      "queen bed",
+      "bedroom",
+      "furniture"
+    ],
+    "tagsVi": [
+      "giường đôi",
+      "giường lớn",
+      "phòng ngủ",
+      "đồ nội thất"
+    ],
     "source": "kenney_furniture-kit/Models/GLTF format/bedDouble.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 2,
     "sizeAxis": "longest",
     "rotate": [
@@ -406,7 +757,27 @@
   },
   {
     "id": "bunk-bed",
+    "nameEn": "bunk bed",
+    "nameVi": "cái giường tầng",
+    "topic": "house",
+    "tagsEn": [
+      "bunk",
+      "two-level bed",
+      "bedroom",
+      "furniture"
+    ],
+    "tagsVi": [
+      "giường tầng",
+      "giường hai tầng",
+      "phòng ngủ",
+      "đồ nội thất"
+    ],
     "source": "kenney_furniture-kit/Models/GLTF format/bedBunk.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 1.7,
     "sizeAxis": "height",
     "rotate": [
@@ -436,7 +807,28 @@
   },
   {
     "id": "sofa",
+    "nameEn": "sofa",
+    "nameVi": "cái ghế sô-pha",
+    "topic": "house",
+    "tagsEn": [
+      "couch",
+      "settee",
+      "living room",
+      "furniture"
+    ],
+    "tagsVi": [
+      "ghế sô-pha",
+      "sofa",
+      "sô pha",
+      "phòng khách",
+      "đồ nội thất"
+    ],
     "source": "kenney_furniture-kit/Models/GLTF format/loungeSofa.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 2,
     "sizeAxis": "longest",
     "rotate": [
@@ -459,7 +851,27 @@
   },
   {
     "id": "armchair",
+    "nameEn": "armchair",
+    "nameVi": "cái ghế bành",
+    "topic": "house",
+    "tagsEn": [
+      "easy chair",
+      "lounge chair",
+      "living room",
+      "furniture"
+    ],
+    "tagsVi": [
+      "ghế bành",
+      "ghế sô-pha đơn",
+      "phòng khách",
+      "đồ nội thất"
+    ],
     "source": "kenney_furniture-kit/Models/GLTF format/loungeChair.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.85,
     "sizeAxis": "height",
     "rotate": [
@@ -482,7 +894,28 @@
   },
   {
     "id": "coffee-table",
+    "nameEn": "coffee table",
+    "nameVi": "cái bàn uống nước",
+    "topic": "house",
+    "tagsEn": [
+      "low table",
+      "tea table",
+      "living room",
+      "furniture"
+    ],
+    "tagsVi": [
+      "bàn uống nước",
+      "bàn trà",
+      "bàn nước",
+      "phòng khách",
+      "đồ nội thất"
+    ],
     "source": "kenney_furniture-kit/Models/GLTF format/tableCoffee.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.45,
     "sizeAxis": "height",
     "rotate": [
@@ -512,7 +945,27 @@
   },
   {
     "id": "side-table",
+    "nameEn": "side table",
+    "nameVi": "cái bàn nhỏ",
+    "topic": "house",
+    "tagsEn": [
+      "small table",
+      "end table",
+      "bedside table",
+      "furniture"
+    ],
+    "tagsVi": [
+      "bàn nhỏ",
+      "bàn đầu giường",
+      "bàn góc",
+      "đồ nội thất"
+    ],
     "source": "kenney_furniture-kit/Models/GLTF format/sideTable.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.55,
     "sizeAxis": "height",
     "rotate": [
@@ -531,11 +984,38 @@
         0.688,
         0.283
       ]
+    },
+    "under": {
+      "height": 0.46,
+      "size": [
+        0.535,
+        0.22
+      ]
     }
   },
   {
     "id": "lamp",
+    "nameEn": "lamp",
+    "nameVi": "cái đèn bàn",
+    "topic": "house",
+    "tagsEn": [
+      "table lamp",
+      "desk lamp",
+      "bedside lamp",
+      "light"
+    ],
+    "tagsVi": [
+      "đèn",
+      "đèn bàn",
+      "đèn ngủ",
+      "chiếu sáng"
+    ],
     "source": "kenney_furniture-kit/Models/GLTF format/lampRoundTable.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.45,
     "sizeAxis": "height",
     "rotate": [
@@ -551,7 +1031,26 @@
   },
   {
     "id": "floor-lamp",
+    "nameEn": "floor lamp",
+    "nameVi": "cái đèn đứng",
+    "topic": "house",
+    "tagsEn": [
+      "standing lamp",
+      "tall lamp",
+      "light"
+    ],
+    "tagsVi": [
+      "đèn đứng",
+      "đèn cây",
+      "đèn sàn",
+      "chiếu sáng"
+    ],
     "source": "kenney_furniture-kit/Models/GLTF format/lampSquareFloor.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 1.6,
     "sizeAxis": "height",
     "rotate": [
@@ -567,7 +1066,28 @@
   },
   {
     "id": "television",
+    "nameEn": "television",
+    "nameVi": "cái ti vi",
+    "topic": "house",
+    "tagsEn": [
+      "TV",
+      "telly",
+      "flat screen",
+      "electronics"
+    ],
+    "tagsVi": [
+      "ti vi",
+      "tivi",
+      "vô tuyến",
+      "truyền hình",
+      "đồ điện tử"
+    ],
     "source": "kenney_furniture-kit/Models/GLTF format/televisionModern.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.7,
     "sizeAxis": "height",
     "rotate": [
@@ -583,7 +1103,25 @@
   },
   {
     "id": "fridge",
+    "nameEn": "fridge",
+    "nameVi": "cái tủ lạnh",
+    "topic": "house",
+    "tagsEn": [
+      "refrigerator",
+      "kitchen",
+      "appliance"
+    ],
+    "tagsVi": [
+      "tủ lạnh",
+      "nhà bếp",
+      "đồ gia dụng"
+    ],
     "source": "kenney_furniture-kit/Models/GLTF format/kitchenFridge.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 1.8,
     "sizeAxis": "height",
     "rotate": [
@@ -606,7 +1144,29 @@
   },
   {
     "id": "cooker",
+    "nameEn": "cooker",
+    "nameVi": "cái bếp",
+    "topic": "house",
+    "tagsEn": [
+      "stove",
+      "oven",
+      "cooking",
+      "kitchen",
+      "appliance"
+    ],
+    "tagsVi": [
+      "bếp",
+      "bếp nấu",
+      "lò nướng",
+      "nhà bếp",
+      "đồ gia dụng"
+    ],
     "source": "kenney_furniture-kit/Models/GLTF format/kitchenStove.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.9,
     "sizeAxis": "height",
     "rotate": [
@@ -629,7 +1189,26 @@
   },
   {
     "id": "sink",
+    "nameEn": "sink",
+    "nameVi": "cái bồn rửa",
+    "topic": "house",
+    "tagsEn": [
+      "kitchen sink",
+      "basin",
+      "kitchen"
+    ],
+    "tagsVi": [
+      "bồn rửa",
+      "bồn rửa bát",
+      "chậu rửa",
+      "nhà bếp"
+    ],
     "source": "kenney_furniture-kit/Models/GLTF format/kitchenSink.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.9,
     "sizeAxis": "height",
     "rotate": [
@@ -653,7 +1232,26 @@
   },
   {
     "id": "microwave",
+    "nameEn": "microwave",
+    "nameVi": "cái lò vi sóng",
+    "topic": "house",
+    "tagsEn": [
+      "microwave oven",
+      "kitchen",
+      "appliance"
+    ],
+    "tagsVi": [
+      "lò vi sóng",
+      "vi sóng",
+      "nhà bếp",
+      "đồ gia dụng"
+    ],
     "source": "kenney_furniture-kit/Models/GLTF format/kitchenMicrowave.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.3,
     "sizeAxis": "height",
     "rotate": [
@@ -676,7 +1274,27 @@
   },
   {
     "id": "cupboard",
+    "nameEn": "cupboard",
+    "nameVi": "cái tủ bếp",
+    "topic": "house",
+    "tagsEn": [
+      "kitchen cabinet",
+      "cabinet",
+      "storage",
+      "furniture"
+    ],
+    "tagsVi": [
+      "tủ bếp",
+      "tủ",
+      "tủ đựng đồ",
+      "nhà bếp"
+    ],
     "source": "kenney_furniture-kit/Models/GLTF format/kitchenCabinet.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.9,
     "sizeAxis": "height",
     "rotate": [
@@ -699,7 +1317,25 @@
   },
   {
     "id": "bath",
+    "nameEn": "bath",
+    "nameVi": "cái bồn tắm",
+    "topic": "house",
+    "tagsEn": [
+      "bathtub",
+      "tub",
+      "bathroom"
+    ],
+    "tagsVi": [
+      "bồn tắm",
+      "bể tắm",
+      "phòng tắm"
+    ],
     "source": "kenney_furniture-kit/Models/GLTF format/bathtub.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 1.7,
     "sizeAxis": "longest",
     "rotate": [
@@ -723,7 +1359,26 @@
   },
   {
     "id": "toilet",
+    "nameEn": "toilet",
+    "nameVi": "cái bồn cầu",
+    "topic": "house",
+    "tagsEn": [
+      "lavatory",
+      "WC",
+      "bathroom"
+    ],
+    "tagsVi": [
+      "bồn cầu",
+      "bệ xí",
+      "nhà vệ sinh",
+      "phòng tắm"
+    ],
     "source": "kenney_furniture-kit/Models/GLTF format/toilet.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.75,
     "sizeAxis": "height",
     "rotate": [
@@ -739,7 +1394,26 @@
   },
   {
     "id": "mirror",
+    "nameEn": "mirror",
+    "nameVi": "cái gương",
+    "topic": "house",
+    "tagsEn": [
+      "wall mirror",
+      "bathroom mirror",
+      "reflection"
+    ],
+    "tagsVi": [
+      "gương",
+      "gương soi",
+      "gương treo tường",
+      "phòng tắm"
+    ],
     "source": "kenney_furniture-kit/Models/GLTF format/bathroomMirror.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.6,
     "sizeAxis": "height",
     "rotate": [
@@ -755,7 +1429,25 @@
   },
   {
     "id": "washing-machine",
+    "nameEn": "washing machine",
+    "nameVi": "cái máy giặt",
+    "topic": "house",
+    "tagsEn": [
+      "washer",
+      "laundry",
+      "appliance"
+    ],
+    "tagsVi": [
+      "máy giặt",
+      "giặt quần áo",
+      "đồ gia dụng"
+    ],
     "source": "kenney_furniture-kit/Models/GLTF format/washer.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.85,
     "sizeAxis": "height",
     "rotate": [
@@ -778,7 +1470,25 @@
   },
   {
     "id": "pillow",
+    "nameEn": "pillow",
+    "nameVi": "cái gối",
+    "topic": "house",
+    "tagsEn": [
+      "cushion",
+      "bedding",
+      "bedroom"
+    ],
+    "tagsVi": [
+      "gối",
+      "gối ngủ",
+      "phòng ngủ"
+    ],
     "source": "kenney_furniture-kit/Models/GLTF format/pillow.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.6,
     "sizeAxis": "longest",
     "rotate": [
@@ -801,7 +1511,27 @@
   },
   {
     "id": "rug",
+    "nameEn": "rug",
+    "nameVi": "cái thảm",
+    "topic": "house",
+    "tagsEn": [
+      "carpet",
+      "mat",
+      "round rug",
+      "floor"
+    ],
+    "tagsVi": [
+      "thảm",
+      "tấm thảm",
+      "thảm tròn",
+      "trải sàn"
+    ],
     "source": "kenney_furniture-kit/Models/GLTF format/rugRound.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 2,
     "sizeAxis": "longest",
     "rotate": [
@@ -824,7 +1554,27 @@
   },
   {
     "id": "box",
+    "nameEn": "box",
+    "nameVi": "cái hộp",
+    "topic": "house",
+    "tagsEn": [
+      "cardboard box",
+      "carton box",
+      "open box",
+      "container"
+    ],
+    "tagsVi": [
+      "hộp",
+      "thùng giấy",
+      "thùng các-tông",
+      "hộp giấy"
+    ],
     "source": "kenney_furniture-kit/Models/GLTF format/cardboardBoxOpen.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.35,
     "sizeAxis": "height",
     "rotate": [
@@ -848,7 +1598,27 @@
   },
   {
     "id": "cat",
+    "nameEn": "cat",
+    "nameVi": "con mèo",
+    "topic": "animals",
+    "tagsEn": [
+      "kitty",
+      "kitten",
+      "pet",
+      "animal"
+    ],
+    "tagsVi": [
+      "mèo",
+      "mèo con",
+      "thú cưng",
+      "động vật"
+    ],
     "source": "kenney_cube-pets_1.0/Models/GLB format/animal-cat.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.3,
     "sizeAxis": "height",
     "rotate": [
@@ -864,7 +1634,28 @@
   },
   {
     "id": "dog",
+    "nameEn": "dog",
+    "nameVi": "con chó",
+    "topic": "animals",
+    "tagsEn": [
+      "puppy",
+      "doggy",
+      "pet",
+      "animal"
+    ],
+    "tagsVi": [
+      "chó",
+      "cún",
+      "cún con",
+      "thú cưng",
+      "động vật"
+    ],
     "source": "kenney_cube-pets_1.0/Models/GLB format/animal-dog.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.5,
     "sizeAxis": "height",
     "rotate": [
@@ -880,7 +1671,27 @@
   },
   {
     "id": "fish",
+    "nameEn": "fish",
+    "nameVi": "con cá",
+    "topic": "animals",
+    "tagsEn": [
+      "goldfish",
+      "sea animal",
+      "underwater",
+      "animal"
+    ],
+    "tagsVi": [
+      "cá",
+      "cá cảnh",
+      "động vật dưới nước",
+      "động vật"
+    ],
     "source": "kenney_cube-pets_1.0/Models/GLB format/animal-fish.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.25,
     "sizeAxis": "height",
     "rotate": [
@@ -896,7 +1707,27 @@
   },
   {
     "id": "bird",
+    "nameEn": "bird",
+    "nameVi": "con chim",
+    "topic": "animals",
+    "tagsEn": [
+      "parrot",
+      "pet",
+      "wings",
+      "animal"
+    ],
+    "tagsVi": [
+      "chim",
+      "vẹt",
+      "thú cưng",
+      "động vật"
+    ],
     "source": "kenney_cube-pets_1.0/Models/GLB format/animal-parrot.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.3,
     "sizeAxis": "height",
     "rotate": [
@@ -912,7 +1743,27 @@
   },
   {
     "id": "chick",
+    "nameEn": "chick",
+    "nameVi": "con gà con",
+    "topic": "animals",
+    "tagsEn": [
+      "baby chicken",
+      "baby bird",
+      "farm animal",
+      "animal"
+    ],
+    "tagsVi": [
+      "gà con",
+      "gà",
+      "vật nuôi",
+      "động vật"
+    ],
     "source": "kenney_cube-pets_1.0/Models/GLB format/animal-chick.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.15,
     "sizeAxis": "height",
     "rotate": [
@@ -928,7 +1779,27 @@
   },
   {
     "id": "rabbit",
+    "nameEn": "rabbit",
+    "nameVi": "con thỏ",
+    "topic": "animals",
+    "tagsEn": [
+      "bunny",
+      "bunny rabbit",
+      "pet",
+      "animal"
+    ],
+    "tagsVi": [
+      "thỏ",
+      "thỏ con",
+      "thú cưng",
+      "động vật"
+    ],
     "source": "kenney_cube-pets_1.0/Models/GLB format/animal-bunny.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.35,
     "sizeAxis": "height",
     "rotate": [
@@ -944,7 +1815,27 @@
   },
   {
     "id": "monkey",
+    "nameEn": "monkey",
+    "nameVi": "con khỉ",
+    "topic": "animals",
+    "tagsEn": [
+      "primate",
+      "zoo animal",
+      "wild animal",
+      "animal"
+    ],
+    "tagsVi": [
+      "khỉ",
+      "sở thú",
+      "động vật hoang dã",
+      "động vật"
+    ],
     "source": "kenney_cube-pets_1.0/Models/GLB format/animal-monkey.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.6,
     "sizeAxis": "height",
     "rotate": [
@@ -960,7 +1851,27 @@
   },
   {
     "id": "elephant",
+    "nameEn": "elephant",
+    "nameVi": "con voi",
+    "topic": "animals",
+    "tagsEn": [
+      "trunk",
+      "zoo animal",
+      "wild animal",
+      "animal"
+    ],
+    "tagsVi": [
+      "voi",
+      "sở thú",
+      "động vật hoang dã",
+      "động vật"
+    ],
     "source": "kenney_cube-pets_1.0/Models/GLB format/animal-elephant.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 3,
     "sizeAxis": "height",
     "rotate": [
@@ -976,7 +1887,27 @@
   },
   {
     "id": "tiger",
+    "nameEn": "tiger",
+    "nameVi": "con hổ",
+    "topic": "animals",
+    "tagsEn": [
+      "big cat",
+      "stripes",
+      "wild animal",
+      "animal"
+    ],
+    "tagsVi": [
+      "hổ",
+      "cọp",
+      "động vật hoang dã",
+      "động vật"
+    ],
     "source": "kenney_cube-pets_1.0/Models/GLB format/animal-tiger.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 1,
     "sizeAxis": "height",
     "rotate": [
@@ -992,7 +1923,26 @@
   },
   {
     "id": "lion",
+    "nameEn": "lion",
+    "nameVi": "con sư tử",
+    "topic": "animals",
+    "tagsEn": [
+      "big cat",
+      "mane",
+      "wild animal",
+      "animal"
+    ],
+    "tagsVi": [
+      "sư tử",
+      "động vật hoang dã",
+      "động vật"
+    ],
     "source": "kenney_cube-pets_1.0/Models/GLB format/animal-lion.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 1.1,
     "sizeAxis": "height",
     "rotate": [
@@ -1008,7 +1958,27 @@
   },
   {
     "id": "giraffe",
+    "nameEn": "giraffe",
+    "nameVi": "con hươu cao cổ",
+    "topic": "animals",
+    "tagsEn": [
+      "long neck",
+      "zoo animal",
+      "wild animal",
+      "animal"
+    ],
+    "tagsVi": [
+      "hươu cao cổ",
+      "cổ dài",
+      "động vật hoang dã",
+      "động vật"
+    ],
     "source": "kenney_cube-pets_1.0/Models/GLB format/animal-giraffe.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 4.5,
     "sizeAxis": "height",
     "rotate": [
@@ -1024,7 +1994,26 @@
   },
   {
     "id": "cow",
+    "nameEn": "cow",
+    "nameVi": "con bò",
+    "topic": "animals",
+    "tagsEn": [
+      "cattle",
+      "farm animal",
+      "animal"
+    ],
+    "tagsVi": [
+      "bò",
+      "bò sữa",
+      "vật nuôi",
+      "động vật"
+    ],
     "source": "kenney_cube-pets_1.0/Models/GLB format/animal-cow.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 1.5,
     "sizeAxis": "height",
     "rotate": [
@@ -1040,7 +2029,27 @@
   },
   {
     "id": "pig",
+    "nameEn": "pig",
+    "nameVi": "con lợn",
+    "topic": "animals",
+    "tagsEn": [
+      "piggy",
+      "hog",
+      "farm animal",
+      "animal"
+    ],
+    "tagsVi": [
+      "lợn",
+      "heo",
+      "vật nuôi",
+      "động vật"
+    ],
     "source": "kenney_cube-pets_1.0/Models/GLB format/animal-pig.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.8,
     "sizeAxis": "height",
     "rotate": [
@@ -1056,7 +2065,26 @@
   },
   {
     "id": "panda",
+    "nameEn": "panda",
+    "nameVi": "con gấu trúc",
+    "topic": "animals",
+    "tagsEn": [
+      "giant panda",
+      "panda bear",
+      "wild animal",
+      "animal"
+    ],
+    "tagsVi": [
+      "gấu trúc",
+      "động vật hoang dã",
+      "động vật"
+    ],
     "source": "kenney_cube-pets_1.0/Models/GLB format/animal-panda.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 1.2,
     "sizeAxis": "height",
     "rotate": [
@@ -1072,7 +2100,27 @@
   },
   {
     "id": "penguin",
+    "nameEn": "penguin",
+    "nameVi": "con chim cánh cụt",
+    "topic": "animals",
+    "tagsEn": [
+      "seabird",
+      "polar animal",
+      "Antarctica",
+      "animal"
+    ],
+    "tagsVi": [
+      "chim cánh cụt",
+      "cánh cụt",
+      "Nam Cực",
+      "động vật"
+    ],
     "source": "kenney_cube-pets_1.0/Models/GLB format/animal-penguin.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.7,
     "sizeAxis": "height",
     "rotate": [
@@ -1088,7 +2136,27 @@
   },
   {
     "id": "bee",
+    "nameEn": "bee",
+    "nameVi": "con ong",
+    "topic": "animals",
+    "tagsEn": [
+      "honeybee",
+      "bumblebee",
+      "insect",
+      "animal"
+    ],
+    "tagsVi": [
+      "ong",
+      "ong mật",
+      "côn trùng",
+      "động vật"
+    ],
     "source": "kenney_cube-pets_1.0/Models/GLB format/animal-bee.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.08,
     "sizeAxis": "height",
     "rotate": [
@@ -1104,7 +2172,27 @@
   },
   {
     "id": "crab",
+    "nameEn": "crab",
+    "nameVi": "con cua",
+    "topic": "animals",
+    "tagsEn": [
+      "shellfish",
+      "claws",
+      "sea animal",
+      "animal"
+    ],
+    "tagsVi": [
+      "cua",
+      "con vật biển",
+      "động vật dưới nước",
+      "động vật"
+    ],
     "source": "kenney_cube-pets_1.0/Models/GLB format/animal-crab.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.15,
     "sizeAxis": "height",
     "rotate": [
@@ -1120,7 +2208,26 @@
   },
   {
     "id": "fox",
+    "nameEn": "fox",
+    "nameVi": "con cáo",
+    "topic": "animals",
+    "tagsEn": [
+      "red fox",
+      "forest animal",
+      "wild animal",
+      "animal"
+    ],
+    "tagsVi": [
+      "cáo",
+      "động vật hoang dã",
+      "động vật"
+    ],
     "source": "kenney_cube-pets_1.0/Models/GLB format/animal-fox.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.5,
     "sizeAxis": "height",
     "rotate": [
@@ -1136,7 +2243,27 @@
   },
   {
     "id": "deer",
+    "nameEn": "deer",
+    "nameVi": "con hươu",
+    "topic": "animals",
+    "tagsEn": [
+      "stag",
+      "antlers",
+      "forest animal",
+      "animal"
+    ],
+    "tagsVi": [
+      "hươu",
+      "nai",
+      "động vật hoang dã",
+      "động vật"
+    ],
     "source": "kenney_cube-pets_1.0/Models/GLB format/animal-deer.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 1.2,
     "sizeAxis": "height",
     "rotate": [
@@ -1152,7 +2279,27 @@
   },
   {
     "id": "polar-bear",
+    "nameEn": "polar bear",
+    "nameVi": "con gấu Bắc Cực",
+    "topic": "animals",
+    "tagsEn": [
+      "white bear",
+      "Arctic",
+      "wild animal",
+      "animal"
+    ],
+    "tagsVi": [
+      "gấu Bắc Cực",
+      "gấu trắng",
+      "Bắc Cực",
+      "động vật"
+    ],
     "source": "kenney_cube-pets_1.0/Models/GLB format/animal-polar.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 1.4,
     "sizeAxis": "height",
     "rotate": [
@@ -1168,7 +2315,26 @@
   },
   {
     "id": "apple",
+    "nameEn": "apple",
+    "nameVi": "quả táo",
+    "topic": "food",
+    "tagsEn": [
+      "red apple",
+      "fruit",
+      "food"
+    ],
+    "tagsVi": [
+      "táo",
+      "trái táo",
+      "trái cây",
+      "hoa quả"
+    ],
     "source": "kenney_food-kit/Models/GLB format/apple.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.08,
     "sizeAxis": "height",
     "rotate": [
@@ -1184,7 +2350,26 @@
   },
   {
     "id": "banana",
+    "nameEn": "banana",
+    "nameVi": "quả chuối",
+    "topic": "food",
+    "tagsEn": [
+      "yellow fruit",
+      "fruit",
+      "food"
+    ],
+    "tagsVi": [
+      "chuối",
+      "trái chuối",
+      "trái cây",
+      "hoa quả"
+    ],
     "source": "kenney_food-kit/Models/GLB format/banana.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.2,
     "sizeAxis": "longest",
     "rotate": [
@@ -1200,7 +2385,27 @@
   },
   {
     "id": "orange",
+    "nameEn": "orange",
+    "nameVi": "quả cam",
+    "topic": "food",
+    "tagsEn": [
+      "citrus",
+      "orange fruit",
+      "fruit",
+      "food"
+    ],
+    "tagsVi": [
+      "cam",
+      "trái cam",
+      "trái cây",
+      "hoa quả"
+    ],
     "source": "kenney_food-kit/Models/GLB format/orange.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.08,
     "sizeAxis": "height",
     "rotate": [
@@ -1216,7 +2421,26 @@
   },
   {
     "id": "pear",
+    "nameEn": "pear",
+    "nameVi": "quả lê",
+    "topic": "food",
+    "tagsEn": [
+      "green pear",
+      "fruit",
+      "food"
+    ],
+    "tagsVi": [
+      "lê",
+      "trái lê",
+      "trái cây",
+      "hoa quả"
+    ],
     "source": "kenney_food-kit/Models/GLB format/pear.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.1,
     "sizeAxis": "height",
     "rotate": [
@@ -1232,7 +2456,28 @@
   },
   {
     "id": "lemon",
+    "nameEn": "lemon",
+    "nameVi": "quả chanh",
+    "topic": "food",
+    "tagsEn": [
+      "citrus",
+      "sour fruit",
+      "fruit",
+      "food"
+    ],
+    "tagsVi": [
+      "chanh",
+      "chanh vàng",
+      "trái chanh",
+      "trái cây",
+      "hoa quả"
+    ],
     "source": "kenney_food-kit/Models/GLB format/lemon.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.07,
     "sizeAxis": "height",
     "rotate": [
@@ -1248,7 +2493,28 @@
   },
   {
     "id": "strawberry",
+    "nameEn": "strawberry",
+    "nameVi": "quả dâu tây",
+    "topic": "food",
+    "tagsEn": [
+      "berry",
+      "red berry",
+      "fruit",
+      "food"
+    ],
+    "tagsVi": [
+      "dâu tây",
+      "dâu",
+      "trái dâu",
+      "trái cây",
+      "hoa quả"
+    ],
     "source": "kenney_food-kit/Models/GLB format/strawberry.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.04,
     "sizeAxis": "height",
     "rotate": [
@@ -1264,7 +2530,27 @@
   },
   {
     "id": "grapes",
+    "nameEn": "grapes",
+    "nameVi": "chùm nho",
+    "topic": "food",
+    "tagsEn": [
+      "grape",
+      "bunch of grapes",
+      "fruit",
+      "food"
+    ],
+    "tagsVi": [
+      "nho",
+      "trái nho",
+      "trái cây",
+      "hoa quả"
+    ],
     "source": "kenney_food-kit/Models/GLB format/grapes.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.15,
     "sizeAxis": "height",
     "rotate": [
@@ -1280,7 +2566,28 @@
   },
   {
     "id": "watermelon",
+    "nameEn": "watermelon",
+    "nameVi": "quả dưa hấu",
+    "topic": "food",
+    "tagsEn": [
+      "melon",
+      "summer fruit",
+      "fruit",
+      "food"
+    ],
+    "tagsVi": [
+      "dưa hấu",
+      "dưa",
+      "trái dưa hấu",
+      "trái cây",
+      "hoa quả"
+    ],
     "source": "kenney_food-kit/Models/GLB format/watermelon.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.3,
     "sizeAxis": "longest",
     "rotate": [
@@ -1296,7 +2603,25 @@
   },
   {
     "id": "tomato",
+    "nameEn": "tomato",
+    "nameVi": "quả cà chua",
+    "topic": "food",
+    "tagsEn": [
+      "red tomato",
+      "vegetable",
+      "food"
+    ],
+    "tagsVi": [
+      "cà chua",
+      "trái cà chua",
+      "rau củ"
+    ],
     "source": "kenney_food-kit/Models/GLB format/tomato.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.07,
     "sizeAxis": "height",
     "rotate": [
@@ -1312,7 +2637,25 @@
   },
   {
     "id": "carrot",
+    "nameEn": "carrot",
+    "nameVi": "củ cà rốt",
+    "topic": "food",
+    "tagsEn": [
+      "root vegetable",
+      "vegetable",
+      "food"
+    ],
+    "tagsVi": [
+      "cà rốt",
+      "rau củ",
+      "đồ ăn"
+    ],
     "source": "kenney_food-kit/Models/GLB format/carrot.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.2,
     "sizeAxis": "longest",
     "rotate": [
@@ -1328,7 +2671,26 @@
   },
   {
     "id": "egg",
+    "nameEn": "egg",
+    "nameVi": "quả trứng",
+    "topic": "food",
+    "tagsEn": [
+      "chicken egg",
+      "breakfast",
+      "food"
+    ],
+    "tagsVi": [
+      "trứng",
+      "trứng gà",
+      "bữa sáng",
+      "đồ ăn"
+    ],
     "source": "kenney_food-kit/Models/GLB format/egg.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.06,
     "sizeAxis": "height",
     "rotate": [
@@ -1344,7 +2706,27 @@
   },
   {
     "id": "bread",
+    "nameEn": "bread",
+    "nameVi": "lát bánh mì",
+    "topic": "food",
+    "tagsEn": [
+      "toast",
+      "slice of bread",
+      "loaf",
+      "food"
+    ],
+    "tagsVi": [
+      "bánh mì",
+      "bánh mì lát",
+      "bánh mì gối",
+      "đồ ăn"
+    ],
     "source": "kenney_food-kit/Models/GLB format/bread.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.12,
     "sizeAxis": "longest",
     "rotate": [
@@ -1360,7 +2742,28 @@
   },
   {
     "id": "cake",
+    "nameEn": "cake",
+    "nameVi": "cái bánh ngọt",
+    "topic": "food",
+    "tagsEn": [
+      "birthday cake",
+      "dessert",
+      "sweet",
+      "food"
+    ],
+    "tagsVi": [
+      "bánh ngọt",
+      "bánh kem",
+      "bánh sinh nhật",
+      "bánh ga-tô",
+      "đồ ăn"
+    ],
     "source": "kenney_food-kit/Models/GLB format/cake.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.25,
     "sizeAxis": "longest",
     "rotate": [
@@ -1376,7 +2779,26 @@
   },
   {
     "id": "cookie",
+    "nameEn": "cookie",
+    "nameVi": "cái bánh quy",
+    "topic": "food",
+    "tagsEn": [
+      "biscuit",
+      "sweet snack",
+      "dessert",
+      "food"
+    ],
+    "tagsVi": [
+      "bánh quy",
+      "bích quy",
+      "đồ ăn"
+    ],
     "source": "kenney_food-kit/Models/GLB format/cookie.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.07,
     "sizeAxis": "longest",
     "rotate": [
@@ -1392,7 +2814,27 @@
   },
   {
     "id": "donut",
+    "nameEn": "donut",
+    "nameVi": "cái bánh vòng",
+    "topic": "food",
+    "tagsEn": [
+      "doughnut",
+      "ring cake",
+      "dessert",
+      "food"
+    ],
+    "tagsVi": [
+      "bánh vòng",
+      "bánh donut",
+      "bánh rán vòng",
+      "đồ ăn"
+    ],
     "source": "kenney_food-kit/Models/GLB format/donut.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.1,
     "sizeAxis": "longest",
     "rotate": [
@@ -1408,7 +2850,27 @@
   },
   {
     "id": "ice-cream",
+    "nameEn": "ice cream",
+    "nameVi": "cây kem",
+    "topic": "food",
+    "tagsEn": [
+      "ice cream cone",
+      "frozen dessert",
+      "sweet",
+      "food"
+    ],
+    "tagsVi": [
+      "kem",
+      "kem ốc quế",
+      "cà rem",
+      "đồ ăn"
+    ],
     "source": "kenney_food-kit/Models/GLB format/ice-cream.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.18,
     "sizeAxis": "height",
     "rotate": [
@@ -1424,7 +2886,27 @@
   },
   {
     "id": "pizza",
+    "nameEn": "pizza",
+    "nameVi": "cái bánh pizza",
+    "topic": "food",
+    "tagsEn": [
+      "pizza pie",
+      "Italian food",
+      "fast food",
+      "food"
+    ],
+    "tagsVi": [
+      "bánh pizza",
+      "pizza",
+      "đồ ăn nhanh",
+      "đồ ăn"
+    ],
     "source": "kenney_food-kit/Models/GLB format/pizza.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.35,
     "sizeAxis": "longest",
     "rotate": [
@@ -1440,7 +2922,27 @@
   },
   {
     "id": "burger",
+    "nameEn": "burger",
+    "nameVi": "cái bánh hamburger",
+    "topic": "food",
+    "tagsEn": [
+      "hamburger",
+      "fast food",
+      "food"
+    ],
+    "tagsVi": [
+      "bánh hamburger",
+      "hamburger",
+      "bánh mì kẹp thịt",
+      "đồ ăn nhanh",
+      "đồ ăn"
+    ],
     "source": "kenney_food-kit/Models/GLB format/burger.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.12,
     "sizeAxis": "longest",
     "rotate": [
@@ -1456,7 +2958,26 @@
   },
   {
     "id": "sandwich",
+    "nameEn": "sandwich",
+    "nameVi": "cái bánh sandwich",
+    "topic": "food",
+    "tagsEn": [
+      "lunch",
+      "snack",
+      "food"
+    ],
+    "tagsVi": [
+      "bánh sandwich",
+      "sandwich",
+      "bánh mì kẹp",
+      "đồ ăn"
+    ],
     "source": "kenney_food-kit/Models/GLB format/sandwich.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.15,
     "sizeAxis": "longest",
     "rotate": [
@@ -1472,7 +2993,26 @@
   },
   {
     "id": "cheese",
+    "nameEn": "cheese",
+    "nameVi": "bánh phô mai",
+    "topic": "food",
+    "tagsEn": [
+      "cheese wheel",
+      "dairy",
+      "food"
+    ],
+    "tagsVi": [
+      "phô mai",
+      "bánh phô mai",
+      "pho mát",
+      "đồ ăn"
+    ],
     "source": "kenney_food-kit/Models/GLB format/cheese.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.1,
     "sizeAxis": "longest",
     "rotate": [
@@ -1488,7 +3028,26 @@
   },
   {
     "id": "milk",
+    "nameEn": "milk",
+    "nameVi": "hộp sữa",
+    "topic": "food",
+    "tagsEn": [
+      "milk carton",
+      "dairy",
+      "drink"
+    ],
+    "tagsVi": [
+      "sữa",
+      "sữa tươi",
+      "sữa hộp",
+      "đồ uống"
+    ],
     "source": "kenney_food-kit/Models/GLB format/carton.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.2,
     "sizeAxis": "height",
     "rotate": [
@@ -1504,7 +3063,26 @@
   },
   {
     "id": "plate",
+    "nameEn": "plate",
+    "nameVi": "cái đĩa",
+    "topic": "food",
+    "tagsEn": [
+      "dish",
+      "tableware",
+      "kitchen"
+    ],
+    "tagsVi": [
+      "đĩa",
+      "dĩa",
+      "đồ dùng bàn ăn",
+      "nhà bếp"
+    ],
     "source": "kenney_food-kit/Models/GLB format/plate.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.25,
     "sizeAxis": "longest",
     "rotate": [
@@ -1527,7 +3105,27 @@
   },
   {
     "id": "bowl",
+    "nameEn": "bowl",
+    "nameVi": "cái bát",
+    "topic": "food",
+    "tagsEn": [
+      "soup bowl",
+      "tableware",
+      "kitchen"
+    ],
+    "tagsVi": [
+      "bát",
+      "chén",
+      "tô",
+      "đồ dùng bàn ăn",
+      "nhà bếp"
+    ],
     "source": "kenney_food-kit/Models/GLB format/bowl.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.16,
     "sizeAxis": "longest",
     "rotate": [
@@ -1551,7 +3149,26 @@
   },
   {
     "id": "cup",
+    "nameEn": "cup",
+    "nameVi": "cái cốc",
+    "topic": "food",
+    "tagsEn": [
+      "drinking glass",
+      "tableware",
+      "kitchen"
+    ],
+    "tagsVi": [
+      "cốc",
+      "ly",
+      "đồ dùng bàn ăn",
+      "nhà bếp"
+    ],
     "source": "kenney_food-kit/Models/GLB format/cup.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.1,
     "sizeAxis": "height",
     "rotate": [
@@ -1575,7 +3192,28 @@
   },
   {
     "id": "ball",
+    "nameEn": "ball",
+    "nameVi": "quả bóng",
+    "topic": "toys",
+    "tagsEn": [
+      "football",
+      "soccer ball",
+      "sport",
+      "toy"
+    ],
+    "tagsVi": [
+      "bóng",
+      "trái bóng",
+      "bóng đá",
+      "đồ chơi"
+    ],
     "source": "polypizza_ball/ball.glb",
+    "credit": {
+      "author": "Smirnoff Alexander",
+      "license": "CC-BY 3.0",
+      "url": "https://poly.pizza/m/57u6P7Sr7K0",
+      "attribution": "Simple soccer football by Smirnoff Alexander [CC-BY] (https://creativecommons.org/licenses/by/3.0/) via Poly Pizza (https://poly.pizza/m/57u6P7Sr7K0)"
+    },
     "size": 0.22,
     "sizeAxis": "height",
     "rotate": [
@@ -1591,7 +3229,27 @@
   },
   {
     "id": "teddy-bear",
+    "nameEn": "teddy bear",
+    "nameVi": "con gấu bông",
+    "topic": "toys",
+    "tagsEn": [
+      "teddy",
+      "stuffed bear",
+      "soft toy",
+      "toy"
+    ],
+    "tagsVi": [
+      "gấu bông",
+      "thú nhồi bông",
+      "đồ chơi"
+    ],
     "source": "polypizza_teddy-bear/teddy-bear.glb",
+    "credit": {
+      "author": "jiang liu",
+      "license": "CC-BY 3.0",
+      "url": "https://poly.pizza/m/3Eb9oLfZYIc",
+      "attribution": "Bear by jiang liu [CC-BY] (https://creativecommons.org/licenses/by/3.0/) via Poly Pizza (https://poly.pizza/m/3Eb9oLfZYIc)"
+    },
     "size": 0.35,
     "sizeAxis": "height",
     "rotate": [
@@ -1607,7 +3265,26 @@
   },
   {
     "id": "doll",
+    "nameEn": "doll",
+    "nameVi": "con búp bê",
+    "topic": "toys",
+    "tagsEn": [
+      "dolly",
+      "toy doll",
+      "toy"
+    ],
+    "tagsVi": [
+      "búp bê",
+      "búp bê đồ chơi",
+      "đồ chơi"
+    ],
     "source": "polypizza_doll/doll.glb",
+    "credit": {
+      "author": "CreativeTrio",
+      "license": "CC0",
+      "url": "https://poly.pizza/m/YUAwclCDrF",
+      "attribution": "Doll by CreativeTrio [CC0] via Poly Pizza (https://poly.pizza/m/YUAwclCDrF)"
+    },
     "size": 0.3,
     "sizeAxis": "height",
     "rotate": [
@@ -1623,7 +3300,27 @@
   },
   {
     "id": "robot",
+    "nameEn": "robot",
+    "nameVi": "con rô-bốt",
+    "topic": "toys",
+    "tagsEn": [
+      "toy robot",
+      "machine",
+      "toy"
+    ],
+    "tagsVi": [
+      "rô-bốt",
+      "rô bốt",
+      "người máy",
+      "đồ chơi"
+    ],
     "source": "polypizza_robot/robot.glb",
+    "credit": {
+      "author": "Quaternius",
+      "license": "CC0",
+      "url": "https://poly.pizza/m/QCm7qe9uNJ",
+      "attribution": "Animated Robot by Quaternius [CC0] via Poly Pizza (https://poly.pizza/m/QCm7qe9uNJ)"
+    },
     "size": 0.35,
     "sizeAxis": "height",
     "rotate": [
@@ -1639,7 +3336,28 @@
   },
   {
     "id": "ship",
+    "nameEn": "ship",
+    "nameVi": "con thuyền",
+    "topic": "toys",
+    "tagsEn": [
+      "sailing ship",
+      "boat",
+      "sailboat",
+      "vehicle"
+    ],
+    "tagsVi": [
+      "thuyền",
+      "thuyền buồm",
+      "tàu thuyền",
+      "phương tiện"
+    ],
     "source": "polypizza_ship/ship.glb",
+    "credit": {
+      "author": "Quaternius",
+      "license": "CC0",
+      "url": "https://poly.pizza/m/cIzO4MBPqI",
+      "attribution": "Sail Ship by Quaternius [CC0] via Poly Pizza (https://poly.pizza/m/cIzO4MBPqI)"
+    },
     "size": 0.4,
     "sizeAxis": "longest",
     "rotate": [
@@ -1655,7 +3373,27 @@
   },
   {
     "id": "plane",
+    "nameEn": "plane",
+    "nameVi": "cái máy bay",
+    "topic": "toys",
+    "tagsEn": [
+      "airplane",
+      "aeroplane",
+      "aircraft",
+      "vehicle"
+    ],
+    "tagsVi": [
+      "máy bay",
+      "tàu bay",
+      "phương tiện"
+    ],
     "source": "polypizza_airplane/airplane.glb",
+    "credit": {
+      "author": "Poly by Google",
+      "license": "CC-BY 3.0",
+      "url": "https://poly.pizza/m/a3XrQkLNna9",
+      "attribution": "Airplane by Poly by Google [CC-BY] (https://creativecommons.org/licenses/by/3.0/) via Poly Pizza (https://poly.pizza/m/a3XrQkLNna9)"
+    },
     "size": 0.4,
     "sizeAxis": "longest",
     "rotate": [
@@ -1671,7 +3409,28 @@
   },
   {
     "id": "skateboard",
+    "nameEn": "skateboard",
+    "nameVi": "cái ván trượt",
+    "topic": "toys",
+    "tagsEn": [
+      "skating",
+      "board with wheels",
+      "sport",
+      "toy"
+    ],
+    "tagsVi": [
+      "ván trượt",
+      "ván trượt bánh xe",
+      "thể thao",
+      "đồ chơi"
+    ],
     "source": "polypizza_skateboard/skateboard.glb",
+    "credit": {
+      "author": "Poly by Google",
+      "license": "CC-BY 3.0",
+      "url": "https://poly.pizza/m/7Dfn4VtTCWY",
+      "attribution": "Skateboard by Poly by Google [CC-BY] (https://creativecommons.org/licenses/by/3.0/) via Poly Pizza (https://poly.pizza/m/7Dfn4VtTCWY)"
+    },
     "size": 0.8,
     "sizeAxis": "longest",
     "rotate": [
@@ -1694,12 +3453,33 @@
   },
   {
     "id": "car",
+    "nameEn": "car",
+    "nameVi": "cái ô tô",
+    "topic": "toys",
+    "tagsEn": [
+      "race car",
+      "racing car",
+      "toy car",
+      "vehicle"
+    ],
+    "tagsVi": [
+      "ô tô",
+      "xe hơi",
+      "xe đua",
+      "phương tiện",
+      "đồ chơi"
+    ],
     "source": "kenney_toy-car-kit/Models/GLB format/vehicle-racer.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.25,
     "sizeAxis": "longest",
     "rotate": [
       0,
-      0,
+      180,
       0
     ],
     "bbox": [
@@ -1710,12 +3490,31 @@
   },
   {
     "id": "truck",
+    "nameEn": "truck",
+    "nameVi": "cái xe tải",
+    "topic": "toys",
+    "tagsEn": [
+      "lorry",
+      "toy truck",
+      "vehicle"
+    ],
+    "tagsVi": [
+      "xe tải",
+      "ô tô tải",
+      "phương tiện",
+      "đồ chơi"
+    ],
     "source": "kenney_toy-car-kit/Models/GLB format/vehicle-truck.glb",
+    "credit": {
+      "author": "Kenney",
+      "license": "CC0",
+      "url": "https://kenney.nl/assets"
+    },
     "size": 0.3,
     "sizeAxis": "longest",
     "rotate": [
       0,
-      0,
+      180,
       0
     ],
     "bbox": [

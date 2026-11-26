@@ -124,15 +124,25 @@ Ngoài ra, các **ví dụ mẫu (few-shot)** được chọn tự động: lấ
 **Kết quả nổi bật:**
 
 - Bố cục 2D: độ chính xác về **quan hệ không gian** của LayoutGPT dùng GPT-4 đạt **91,73%**, ngang với bố cục do **người vẽ (91,17%)**; ảnh sinh ra đúng hơn các mô hình sinh ảnh trực tiếp 20–40%.
-- Phòng 3D: tỉ lệ cảnh có **đồ đặt ra ngoài phạm vi phòng** thấp hơn phương pháp có huấn luyện ATISS (phòng ngủ 43,26% so với 49,88%).
-- **Thí nghiệm bỏ bớt thành phần (ablation):** với 3D, **chuẩn hoá đơn vị là yếu tố quan trọng nhất**; cú pháp CSS cũng giúp rõ rệt.
+- Phòng 3D: tỉ lệ cảnh có **đồ đặt ra ngoài phạm vi phòng** (càng thấp càng tốt) so với phương pháp có huấn luyện ATISS (Bảng 5 của bài):
+
+  | Mô hình | Phòng ngủ | Phòng khách |
+  | --- | --- | --- |
+  | ATISS | 49,88% | 83,02% |
+  | LayoutGPT (GPT-3.5) | **43,26%** | 73,58% |
+  | LayoutGPT (GPT-3.5-chat) | 57,21% | 81,13% |
+  | LayoutGPT (GPT-4) | 51,06% | **64,15%** |
+
+  Ở phòng khách, cả ba đều tốt hơn ATISS; ở phòng ngủ, chỉ GPT-3.5 tốt hơn ATISS.
+- **Thí nghiệm bỏ bớt thành phần (ablation):** với 3D, **chuẩn hoá đơn vị là yếu tố quan trọng nhất**; với 2D, quan trọng nhất là **cú pháp CSS**.
 
 **Hạn chế:**
 
-- **Vẫn đặt sai nhiều với 3D:** 43–64% cảnh có đồ vượt ra ngoài phòng; LLM đôi khi **chép nguyên con số** từ ví dụ mẫu dù kích thước phòng khác.
+- **Vẫn đặt sai nhiều với 3D:** 43–57% cảnh phòng ngủ và 64–81% cảnh phòng khách có đồ vượt ra ngoài phòng (tuỳ mô hình); LLM đôi khi **chép nguyên con số** từ ví dụ mẫu dù kích thước phòng khác.
 - Ít dùng các vật hiếm gặp trong ví dụ mẫu (ví dụ bàn trà trong phòng ngủ).
 - Dùng **GPT-3.5 / GPT-4**: mô hình trả phí, chạy trên máy chủ của OpenAI.
-- Bài không có mục hạn chế riêng; các hạn chế trên rút ra từ số liệu trong bài.
+- Chỉ xử lý được **phòng hình chữ nhật** (bài báo nêu rõ).
+- Phần chính của bài (trang 1–10) không có mục hạn chế riêng; trừ ý về phòng hình chữ nhật, các hạn chế trên rút ra từ số liệu và nhận xét trong bài. Phần phụ lục chưa đọc hết.
 
 **Liên hệ với Peekaboo:**
 
@@ -147,7 +157,7 @@ Ngoài ra, các **ví dụ mẫu (few-shot)** được chọn tự động: lấ
 **Áp dụng cho Peekaboo:**
 
 - **Củng cố quyết định dùng đầu ra có cấu trúc rõ ràng:** bài báo cho thấy định dạng có tên thuộc tính (CSS) giúp LLM làm tốt hơn, phù hợp với kết quả thử nghiệm tuần 1 (thêm JSON Schema thì từ không ổn định lên 6/6 lần đúng cấu trúc).
-- **Lý do không để LLM tự tính toạ độ:** ngay cả GPT-4 vẫn đặt đồ vượt ra ngoài phòng ở khoảng một nửa số cảnh 3D. Mô hình nhỏ chạy trên máy cá nhân chắc chắn còn kém hơn. Vì vậy Peekaboo chỉ để LLM chọn **quan hệ**, còn **vị trí do quy tắc tính**, đảm bảo luôn đúng (đánh giá ở RQ2).
+- **Lý do không để LLM tự tính toạ độ:** ngay cả GPT-4 vẫn đặt đồ vượt ra ngoài phòng ở 51–64% số cảnh 3D. Mô hình nhỏ chạy trên máy cá nhân nhiều khả năng còn kém hơn. Vì vậy Peekaboo chỉ để LLM chọn **quan hệ**, còn **vị trí do quy tắc tính** để kết quả ổn định và kiểm tra được (mức độ đúng sẽ đo ở RQ2).
 - **Chọn ví dụ mẫu theo độ giống đề bài** có thể áp dụng cho prompt sinh dàn ý (CV3.1): ví dụ đề bài về đồ ăn thì chọn ví dụ mẫu về đồ ăn.
 - **Cách đánh giá quan hệ không gian bằng tâm hộp bao** và bộ đề có mẫu cố định (kiểu *"A dog to the right of a bench"*) là cách tham khảo tốt cho bộ dữ liệu và cách chấm RQ2.
 
@@ -218,8 +228,8 @@ Ngoài ra, các **ví dụ mẫu (few-shot)** được chọn tự động: lấ
 | Công trình | Nội dung | Kết quả chính |
 | --- | --- | --- |
 | Jung-Yu Lai, Li-Ting Chang. *Impacts of Augmented Reality Apps on First Graders' Motivation and Performance in English Vocabulary Learning.* SAGE Open, 2021. DOI: [10.1177/21582440211047549](https://doi.org/10.1177/21582440211047549) | Dùng ứng dụng AR dạy từ vựng tiếng Anh cho học sinh **lớp 1** | Theo tóm tắt: AR cải thiện rõ rệt **động lực học** và **kết quả học từ vựng** của học sinh |
-| Che Samihah Che Dalim và cộng sự. *Using augmented reality with speech input for non-native children's language learning.* International Journal of Human-Computer Studies, tập 134, 2020. DOI: [10.1016/j.ijhcs.2019.10.002](https://doi.org/10.1016/j.ijhcs.2019.10.002) | Công cụ AR **TeachAR** dạy trẻ **4–6 tuổi** không phải người bản ngữ các từ về màu, hình và **quan hệ không gian**, có nhận dạng giọng nói; 120 trẻ tham gia | Trẻ học **từ trừu tượng (như quan hệ không gian) tốt hơn**, hứng thú cao, làm bài nhanh và dễ hơn cách truyền thống |
-| Jorge Bacca-Acosta, Julian Tejada, Georgios Lampropoulos, Cecilia Avila. *A Comparative Eye-Tracking Study Between a Virtual Reality System and a Desktop Environment for Learning the Prepositions of Place in English.* CALICO Journal, 40(1), 2023. DOI: [10.1558/cj.22803](https://doi.org/10.1558/cj.22803) | So sánh học **giới từ chỉ vị trí** bằng VR và bằng ứng dụng 2D trên máy tính; 80 sinh viên đại học | Nhóm **VR học tốt hơn rõ rệt** nhóm 2D, nhưng mất nhiều thời gian hơn và mắc nhiều lỗi hơn khi thao tác. Giới từ dễ nhất là ***on***; khó nhất là ***below*** (2D) và ***behind*** (VR) |
+| Che Samihah Che Dalim, Mohd Shahrizal Sunar, Arindam Dey, Mark Billinghurst. *Using augmented reality with speech input for non-native children's language learning.* International Journal of Human-Computer Studies, tập 134, 2020. DOI: [10.1016/j.ijhcs.2019.10.002](https://doi.org/10.1016/j.ijhcs.2019.10.002) | Công cụ AR **TeachAR** kết hợp nhận dạng giọng nói, dạy **trẻ nhỏ không phải người bản ngữ** các từ về màu, hình và **quan hệ không gian**; hai thí nghiệm | Theo tóm tắt: so với cách truyền thống, trẻ **tiếp thu và hứng thú hơn**, làm bài **nhanh và dễ hơn** |
+| J. Bacca-Acosta, J. Tejada, G. Lampropoulos, C. Avila. *Comparative Eye-Tracking Study Between a Virtual Reality System and a Desktop Environment for Learning the Prepositions of Place in English.* CALICO Journal, 40(1), 2023. DOI: [10.1558/cj.22803](https://doi.org/10.1558/cj.22803) | So sánh học **giới từ chỉ vị trí** bằng VR và bằng ứng dụng 2D trên máy tính; 80 sinh viên đại học | Nhóm **VR học tốt hơn rõ rệt** nhóm 2D, nhưng mất nhiều thời gian hơn và mắc nhiều lỗi hơn khi thao tác. Giới từ dễ nhất là ***on***; khó nhất là ***below*** (2D) và ***behind*** (VR) |
 
 **Nhận xét:**
 

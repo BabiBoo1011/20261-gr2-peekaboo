@@ -57,7 +57,7 @@ Giấy phép tính theo **từng mô hình**.
 | ship | Sail Ship | Quaternius | CC0 | 209 KB | 3.938 |
 | skateboard | Skateboard | Poly by Google | CC-BY 3.0 | 1.122 KB | 756 |
 
-- Phủ thêm **8/40 từ**; độ chi tiết và phong cách khác nhau nhiều giữa các tác giả.
+- Phủ thêm **9/40 từ**; độ chi tiết và phong cách khác nhau nhiều giữa các tác giả.
 
 ## 4. Độ phủ 40 từ
 
