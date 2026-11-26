@@ -361,8 +361,8 @@ Dùng được cả khi giáo viên trình chiếu (F30) và khi học sinh xem 
 | CV1.3 | ✅**Chuẩn hoá mô hình** bằng script: đưa gốc toạ độ về giữa đáy, quay đúng hướng (mặt trước nhìn trục +Z), đặt tỉ lệ theo kích thước thực tương đối, giảm dung lượng xuống dưới 2 MB | CV1.2 | Thư mục mô hình đã chuẩn hoá |
 | CV1.4 | ✅Đo **hộp bao** và ghi **thuộc tính phục vụ sắp xếp cảnh**: có mặt trên đặt đồ được không (bàn, giường), có chứa đồ được không (hộp, giỏ), độ cao khoảng trống phía dưới (gầm bàn, gầm ghế) | CV1.3 | Tệp thông tin mô hình (JSON) |
 | CV1.5 | ✅Viết tên, thẻ mô tả tiếng Anh và tiếng Việt, chủ đề cho từng mô hình | CV1.2 | Tệp thông tin mô hình |
-| CV1.6 | Tạo ảnh xem trước cho từng mô hình | CV1.3 | Thư mục ảnh |
-| CV1.7 | **Gán nhãn bộ dữ liệu RQ1:** khoảng 150 khái niệm kèm mô hình đúng, gồm trùng tên, đồng nghĩa, tiếng Việt, khái niệm không có trong thư viện; chia thành phần chỉnh tham số và phần đánh giá | CV1.5 | `data/rq1-concepts.json` |
+| CV1.6 | ✅Tạo ảnh xem trước cho từng mô hình | CV1.3 | `assets/models/previews/` |
+| CV1.7 | ✅**Gán nhãn bộ dữ liệu RQ1:** khoảng 150 khái niệm kèm mô hình đúng, gồm trùng tên, đồng nghĩa, tiếng Việt, khái niệm không có trong thư viện; chia thành phần chỉnh tham số và phần đánh giá | CV1.5 | `experiments/data/rq1-concepts.json` |
 
 **Đầu vào cho CV1.4:** chính các thuộc tính này giúp bộ sắp xếp cảnh biết đặt *on* lên mặt bàn, *in* vào trong hộp, *under* vào gầm bàn.
 
