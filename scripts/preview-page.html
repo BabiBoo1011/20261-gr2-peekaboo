@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Tạo ảnh xem trước</title>
+<style>
+  body { margin: 16px; font: 14px system-ui, sans-serif; background: #f3f2ee; color: #222; }
+  #grid { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+  #grid img { width: 96px; height: 96px; background: #fff; border-radius: 6px; }
+</style>
+<!-- Trang dùng bởi render-previews.js; three.js lấy từ scripts/node_modules -->
+<script type="importmap">
+  { "imports": { "three": "/three/build/three.module.js", "three/addons/": "/three/examples/jsm/" } }
+</script>
+</head>
+<body>
+<div id="status">Đang chuẩn bị…</div>
+<div id="grid"></div>
+<script type="module">
+import * as THREE from 'three';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+
+const SIZE = 256;                                   // ảnh vuông 256 × 256 px, nền trong suốt
+const VIEW = new THREE.Vector3(0.6, 0.45, 1).normalize(); // nhìn chéo từ phía trước (+Z), hơi cao
+
+const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, preserveDrawingBuffer: true });
+renderer.setPixelRatio(1);
+renderer.setSize(SIZE, SIZE);
+renderer.setClearColor(0x000000, 0);
+
+const scene = new THREE.Scene();
+scene.add(new THREE.HemisphereLight(0xffffff, 0x9a9a9a, 2.2));
+const sun = new THREE.DirectionalLight(0xffffff, 2.0);
+sun.position.set(2, 4, 3);
+scene.add(sun);
+
+const camera = new THREE.PerspectiveCamera(30, 1, 0.001, 1000);
+const loader = new GLTFLoader();
+const status = document.getElementById('status');
+const ids = await (await fetch('/ids.json')).json();
+
+for (const [n, id] of ids.entries()) {
+  const gltf = await loader.loadAsync(`/models/${id}.glb`);
+  const model = gltf.scene;
+  scene.add(model);
+
+  // Đặt camera sao cho cả vật nằm gọn trong khung (theo hình cầu bao quanh hộp bao)
+  const box = new THREE.Box3().setFromObject(model);
+  const sphere = box.getBoundingSphere(new THREE.Sphere());
+  const distance = sphere.radius / Math.sin(THREE.MathUtils.degToRad(camera.fov / 2)) * 1.02;
+  camera.position.copy(sphere.center).addScaledVector(VIEW, distance);
+  camera.near = distance / 100;
+  camera.far = distance * 100;
+  camera.updateProjectionMatrix();
+  camera.lookAt(sphere.center);
+
+  renderer.render(scene, camera);
+  const blob = await new Promise((ok) => renderer.domElement.toBlob(ok, 'image/png'));
+  await fetch(`/previews/${id}.png`, { method: 'POST', body: blob });
+
+  const img = document.createElement('img');
+  img.src = URL.createObjectURL(blob);
+  img.title = id;
+  document.getElementById('grid').appendChild(img);
+  status.textContent = `Đã lưu ${n + 1}/${ids.length} ảnh`;
+
+  scene.remove(model);
+}
+status.textContent = `Xong: đã lưu ${ids.length} ảnh vào assets/models/previews/. Có thể đóng trang.`;
+document.title = 'XONG';
+</script>
+</body>
+</html>
