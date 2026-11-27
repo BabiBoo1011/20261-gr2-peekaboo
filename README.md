@@ -31,6 +31,36 @@ Giáo viên chỉ cần mô tả nội dung bài học bằng lời; hệ thốn
 | Mô hình ngôn ngữ | Mô hình mã nguồn mở chạy cục bộ bằng Ollama |
 | Mô hình 3D | Tệp `.glb` từ các kho có giấy phép CC0 |
 
+## Cài đặt và chạy
+
+**Cần có:** Node.js 20.19 trở lên, PostgreSQL, Ollama (đã tải `qwen2.5:7b` và `bge-m3`).
+
+1. Tạo CSDL (nhập mật khẩu tài khoản `postgres` khi được hỏi):
+
+   ```bash
+   createdb -U postgres peekaboo
+   ```
+
+2. Chép `server/.env.example` thành `server/.env`, thay `MAT_KHAU` bằng mật khẩu PostgreSQL của máy.
+
+3. Cài thư viện cho server và client:
+
+   ```bash
+   npm --prefix server install
+   npm --prefix client install
+   ```
+
+4. Chạy server (cổng 3001) và client (cổng 5173), mỗi lệnh ở một cửa sổ terminal:
+
+   ```bash
+   npm --prefix server run dev
+   npm --prefix client run dev
+   ```
+
+5. Mở <http://localhost:5173>. Đầu trang hiện trạng thái Server, PostgreSQL, Ollama; bên trái là danh sách mô hình, bấm vào để xem mô hình 3D.
+
+Các script xử lý thư viện mô hình (chuẩn hoá, đo, tạo ảnh xem trước) nằm trong `scripts/`, xem chú thích đầu mỗi tệp.
+
 ## Trạng thái
 
-Đang ở **giai đoạn 0 – Chuẩn bị và khảo sát** (xem mục 12 và 13 trong [tài liệu mô tả](docs/01-mo-ta-du-an.md)). Hướng dẫn cài đặt và chạy sẽ được bổ sung khi có mã nguồn ứng dụng.
+Đang ở **giai đoạn 2 – Thiết kế và khung dự án** (xem mục 12 trong [tài liệu mô tả](docs/01-mo-ta-du-an.md)).

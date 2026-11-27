@@ -375,7 +375,7 @@ Dùng được cả khi giáo viên trình chiếu (F30) và khi học sinh xem 
 | CV2.3 | Thiết kế CSDL (ERD, các bảng, ràng buộc); viết `schema.sql` | `docs/02-thiet-ke-csdl.md`, `database/schema.sql` |
 | CV2.4 | Thiết kế danh sách API | `docs/03-thiet-ke-api.md` |
 | CV2.5 | Phác thảo các màn hình chính: danh sách bài giảng, tạo bài giảng, soạn slide, trình chiếu, thư viện | Bản phác thảo giao diện |
-| CV2.6 | Khởi tạo dự án ReactJS và Express; kết nối PostgreSQL và Ollama; hiển thị 1 mô hình `.glb` thật bằng React Three Fiber | Khung dự án chạy được |
+| CV2.6 | ✅Khởi tạo dự án ReactJS và Express; kết nối PostgreSQL và Ollama; hiển thị 1 mô hình `.glb` thật bằng React Three Fiber | Khung dự án chạy được |
 | CV2.7 | **Chốt phương án triển khai** (xem giai đoạn 7) | Ghi chú quyết định |
 
 **Mốc M2:** thư viện có ít nhất 80 mô hình đã chuẩn hoá, có đủ thông tin; bộ dữ liệu RQ1 đã gán nhãn; khung dự án chạy được, hiển thị được mô hình thật.

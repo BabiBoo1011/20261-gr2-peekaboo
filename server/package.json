@@ -1,0 +1,17 @@
+{
+  "name": "peekaboo-server",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js"
+  },
+  "description": "Backend Peekaboo: Express + PostgreSQL + Ollama",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "pg": "^8.16.3"
+  },
+  "type": "module",
+  "private": true
+}
