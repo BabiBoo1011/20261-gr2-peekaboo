@@ -16,9 +16,13 @@ Tài liệu này quy định cấu trúc thư mục, cách đặt tên và cách
 │   ├── 01-mo-ta-du-an.md
 │   ├── 02-thiet-ke-csdl.md
 │   ├── 03-thiet-ke-api.md
-│   ├── 04-thiet-ke-json.md        Cấu trúc dàn ý và cảnh 3D
-│   ├── images/                    Sơ đồ, ảnh chụp màn hình
-│   └── nhat-ky/                   Nhật ký kỹ thuật, báo cáo tiến độ hằng tuần
+│   ├── 04-thiet-ke-json.md                 Cấu trúc dàn ý và cảnh 3D
+│   ├── 05-khao-sat-nguon-mo-hinh-3d.md     Khảo sát nguồn mô hình 3D
+│   ├── 06-khao-sat-nghien-cuu-lien-quan.md Khảo sát nghiên cứu liên quan
+│   ├── 07-danh-sach-vat.md                 Danh sách vật trong thư viện                 
+│   ├── 08-thiet-ke-kien-truc.md            Sơ đồ kiến trúc, luồng xử lý
+│   ├── images/                             Sơ đồ, ảnh chụp màn hình
+│   └── nhat-ky/
 │
 ├── prototype/                 Bản thử nghiệm nhanh, không dùng cho sản phẩm
 │
@@ -48,6 +52,7 @@ Tài liệu này quy định cấu trúc thư mục, cách đặt tên và cách
 │
 ├── database/
 │   ├── schema.sql                 Tạo bảng
+│   ├── check.sql                  Kiểm tra ràng buộc
 │   └── seed.sql                   Dữ liệu mẫu
 │
 ├── assets/
