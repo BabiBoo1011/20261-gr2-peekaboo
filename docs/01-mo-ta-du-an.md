@@ -284,7 +284,7 @@ Dùng được cả khi giáo viên trình chiếu (F30) và khi học sinh xem 
 | **Người dùng** | id, email, tên hiển thị, mật khẩu (đã mã hoá), vai trò (`TEACHER` / `SYSTEM_ADMIN`), bị khoá, ngày tạo |
 | **Bài giảng** | id, giáo viên tạo, tiêu đề, mô tả yêu cầu ban đầu, khối lớp, trạng thái chia sẻ, mã chia sẻ, ngày tạo, ngày sửa |
 | **Slide** | id, bài giảng, thứ tự, tiêu đề, từ vựng (tiếng Anh, nghĩa tiếng Việt), câu mẫu, dữ liệu cảnh 3D (danh sách mô hình, vị trí, góc xoay, tỉ lệ, góc camera) |
-| **Mô hình 3D** | id, tên, thẻ mô tả, chủ đề, đường dẫn tệp `.glb`, ảnh xem trước, kích thước hộp bao, tỉ lệ chuẩn, nguồn, giấy phép, vector ngữ nghĩa, bị ẩn |
+| **Mô hình 3D** | id (trùng tên tệp), tên tiếng Anh, tên tiếng Việt, thẻ mô tả, chủ đề, kích thước hộp bao, thuộc tính đặt vật, nguồn, tác giả, giấy phép, vector ngữ nghĩa, bị ẩn |
 | **Lần sinh bài giảng** | id, bài giảng, mô hình LLM đã dùng, dàn ý trả về, số lần thử lại, thời gian xử lý, lỗi (nếu có). Dùng cho đánh giá ở mục 8 |
 
 ## 10. Yêu cầu phi chức năng
@@ -372,7 +372,7 @@ Dùng được cả khi giáo viên trình chiếu (F30) và khi học sinh xem 
 | --- | --- | --- |
 | CV2.1 | ✅Vẽ sơ đồ kiến trúc và luồng xử lý chi tiết | Sơ đồ kiến trúc |
 | CV2.2 | ✅Thiết kế **cấu trúc JSON** của dàn ý và của dữ liệu cảnh 3D; viết bộ kiểm tra định dạng (JSON Schema) | `docs/` + tệp schema |
-| CV2.3 | Thiết kế CSDL (ERD, các bảng, ràng buộc); viết `schema.sql` | `docs/02-thiet-ke-csdl.md`, `database/schema.sql` |
+| CV2.3 | ✅Thiết kế CSDL (ERD, các bảng, ràng buộc); viết `schema.sql` | `docs/02-thiet-ke-csdl.md`, `database/schema.sql` |
 | CV2.4 | Thiết kế danh sách API | `docs/03-thiet-ke-api.md` |
 | CV2.5 | Phác thảo các màn hình chính: danh sách bài giảng, tạo bài giảng, soạn slide, trình chiếu, thư viện | Bản phác thảo giao diện |
 | CV2.6 | ✅Khởi tạo dự án ReactJS và Express; kết nối PostgreSQL và Ollama; hiển thị 1 mô hình `.glb` thật bằng React Three Fiber | Khung dự án chạy được |
