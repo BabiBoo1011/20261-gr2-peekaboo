@@ -370,8 +370,8 @@ Dùng được cả khi giáo viên trình chiếu (F30) và khi học sinh xem 
 
 | Mã | Công việc | Đầu ra |
 | --- | --- | --- |
-| CV2.1 | Vẽ sơ đồ kiến trúc và luồng xử lý chi tiết | Sơ đồ kiến trúc |
-| CV2.2 | Thiết kế **cấu trúc JSON** của dàn ý và của dữ liệu cảnh 3D; viết bộ kiểm tra định dạng (JSON Schema) | `docs/` + tệp schema |
+| CV2.1 | ✅Vẽ sơ đồ kiến trúc và luồng xử lý chi tiết | Sơ đồ kiến trúc |
+| CV2.2 | ✅Thiết kế **cấu trúc JSON** của dàn ý và của dữ liệu cảnh 3D; viết bộ kiểm tra định dạng (JSON Schema) | `docs/` + tệp schema |
 | CV2.3 | Thiết kế CSDL (ERD, các bảng, ràng buộc); viết `schema.sql` | `docs/02-thiet-ke-csdl.md`, `database/schema.sql` |
 | CV2.4 | Thiết kế danh sách API | `docs/03-thiet-ke-api.md` |
 | CV2.5 | Phác thảo các màn hình chính: danh sách bài giảng, tạo bài giảng, soạn slide, trình chiếu, thư viện | Bản phác thảo giao diện |

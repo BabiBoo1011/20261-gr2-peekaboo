@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Cảnh 3D của một slide do hệ thống sắp xếp",
+  "type": "object",
+  "required": ["units", "up", "front", "objects", "relations", "camera", "warnings"],
+  "additionalProperties": false,
+  "definitions": {
+    "vec3": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": { "type": "number" }
+    }
+  },
+  "properties": {
+    "units": { "const": "m" },
+    "up": { "const": "+Y" },
+    "front": { "const": "+Z" },
+    "objects": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "required": ["key", "modelId", "position", "rotationY", "scale"],
+        "additionalProperties": false,
+        "properties": {
+          "key": { "type": "string", "minLength": 1 },
+          "modelId": { "type": ["string", "null"] },
+          "position": { "$ref": "#/definitions/vec3" },
+          "rotationY": { "type": "number", "minimum": -180, "maximum": 180 },
+          "scale": { "type": "number", "exclusiveMinimum": 0 }
+        }
+      }
+    },
+    "relations": {
+      "type": "array",
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "required": ["subject", "relation", "object"],
+        "additionalProperties": false,
+        "properties": {
+          "subject": { "type": "string" },
+          "relation": { "enum": ["in", "on", "under", "behind", "in front of", "next to", "between"] },
+          "object": { "type": "string" },
+          "object2": { "type": "string" }
+        },
+        "if": { "properties": { "relation": { "const": "between" } } },
+        "then": { "required": ["object2"] },
+        "else": { "not": { "required": ["object2"] } }
+      }
+    },
+    "camera": {
+      "type": "object",
+      "required": ["position", "target"],
+      "additionalProperties": false,
+      "properties": {
+        "position": { "$ref": "#/definitions/vec3" },
+        "target": { "$ref": "#/definitions/vec3" }
+      }
+    },
+    "warnings": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

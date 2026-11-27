@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Dàn ý bài giảng do LLM sinh",
+  "type": "object",
+  "required": ["title", "slides"],
+  "additionalProperties": false,
+  "properties": {
+    "title": { "type": "string", "minLength": 1, "maxLength": 80 },
+    "slides": {
+      "type": "array", "minItems": 1, "maxItems": 10,
+      "items": {
+        "type": "object",
+        "required": ["title", "sentence", "vocabulary", "scene"],
+        "additionalProperties": false,
+        "properties": {
+          "title": { "type": "string", "minLength": 1, "maxLength": 60 },
+          "sentence": { "type": "string", "minLength": 1, "maxLength": 120 },
+          "vocabulary": {
+            "type": "array", "minItems": 1, "maxItems": 6,
+            "items": { "type": "string", "minLength": 1 }
+          },
+          "scene": {
+            "type": "object",
+            "required": ["objects", "relations"],
+            "additionalProperties": false,
+            "properties": {
+              "objects": {
+                "type": "array", "minItems": 1, "maxItems": 4, "uniqueItems": true,
+                "items": { "type": "string", "minLength": 1 }
+              },
+              "relations": {
+                "type": "array", "maxItems": 3,
+                "items": {
+                  "type": "object",
+                  "required": ["subject", "relation", "object"],
+                  "additionalProperties": false,
+                  "properties": {
+                    "subject": { "type": "string" },
+                    "relation": { "enum": ["in", "on", "under", "behind", "in front of", "next to", "between"] },
+                    "object": { "type": "string" },
+                    "object2": { "type": "string" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
